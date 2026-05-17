@@ -1,0 +1,2337 @@
+# Translation file for PDF Builder Pro
+# Copyright (C) 2025 PDF Builder Pro
+# This file is distributed under the same license as the PDF Builder Pro package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PDF Builder Pro\n"
+"Report-Msgid-Bugs-To: https://github.com/natsenack/wp-advanced-pdf-invoice-builder\n"
+"POT-Creation-Date: 2025-11-14 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+#: Generated automatically
+msgid "Templates"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous devez être connecté."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur de sécurité : nonce invalide."
+msgstr ""
+
+#: Generated automatically
+msgid "Permission refusée."
+msgstr ""
+
+#: Generated automatically
+msgid "ID du template manquant ou invalide."
+msgstr ""
+
+#: Generated automatically
+msgid "Template non trouvé."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors du décodage des données du template."
+msgstr ""
+
+#: Generated automatically
+msgid "Format de données du template invalide."
+msgstr ""
+
+#: Generated automatically
+msgid "Données du template incomplètes."
+msgstr ""
+
+#: Generated automatically
+msgid "Templates\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous devez être connecté.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur de sécurité : nonce invalide.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Permission refusée.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "ID du template manquant ou invalide.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Template non trouvé.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors du décodage des données du template.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Format de données du template invalide.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Données du template incomplètes.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Permissions insuffisantes"
+msgstr ""
+
+#: Generated automatically
+msgid "Nonce de sécurité invalide"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres du canvas récupérés avec succès"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur: %s"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun paramètre à sauvegarder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres du canvas sauvegardés avec succès"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la sauvegarde des paramètres"
+msgstr ""
+
+#: Generated automatically
+msgid "Action non confirmée"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres du canvas réinitialisés aux valeurs par défaut"
+msgstr ""
+
+#: Generated automatically
+msgid "Permissions insuffisantes\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nonce de sécurité invalide\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres du canvas récupérés avec succès\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur: %s\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun paramètre à sauvegarder\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres du canvas sauvegardés avec succès\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la sauvegarde des paramètres\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Action non confirmée\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres du canvas réinitialisés aux valeurs par défaut\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Templates PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "Template PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "Nouveau Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Ajouter un Nouveau Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditer le Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Voir le Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Rechercher Templates"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun template trouvé"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun template dans la corbeille"
+msgstr ""
+
+#: Generated automatically
+msgid "Ajouter"
+msgstr ""
+
+#: Generated automatically
+msgid "Ajouter un template PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "Modifier le template"
+msgstr ""
+
+#: Generated automatically
+msgid "Nouveau template"
+msgstr ""
+
+#: Generated automatically
+msgid "Voir le template"
+msgstr ""
+
+#: Generated automatically
+msgid "Rechercher des templates"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro - Gestionnaire de PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Accueil - PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "🏠 Accueil"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditeur PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "🎨 Éditeur PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "Templates PDF - PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "📋 Templates"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres - PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "⚙️ Paramètres"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions nécessaires pour accéder à cette page."
+msgstr ""
+
+#: Generated automatically
+msgid "Chargement..."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur"
+msgstr ""
+
+#: Generated automatically
+msgid "Succès"
+msgstr ""
+
+#: Generated automatically
+msgid "Êtes-vous sûr de vouloir supprimer ce template ?"
+msgstr ""
+
+#: Generated automatically
+msgid "Dupliquer ce template ?"
+msgstr ""
+
+#: Generated automatically
+msgid "Nonce invalide."
+msgstr ""
+
+#: Generated automatically
+msgid "Permissions insuffisantes."
+msgstr ""
+
+#: Generated automatically
+msgid "Base de données vérifiée avec succès."
+msgstr ""
+
+#: Generated automatically
+msgid "Tables de base de données créées/réparées avec succès."
+msgstr ""
+
+#: Generated automatically
+msgid "Fonction de création des tables non trouvée."
+msgstr ""
+
+#: Generated automatically
+msgid "Fichier repair-database.sql introuvable."
+msgstr ""
+
+#: Generated automatically
+msgid "Impossible de lire le fichier SQL."
+msgstr ""
+
+#: Generated automatically
+msgid "Script SQL exécuté avec succès ! %d instructions réussies."
+msgstr ""
+
+#: Generated automatically
+msgid "Script SQL partiellement exécuté. %d réussites, %d erreurs."
+msgstr ""
+
+#: Generated automatically
+msgid "Cache vidé avec succès."
+msgstr ""
+
+#: Generated automatically
+msgid "Nonce invalide"
+msgstr ""
+
+#: Generated automatically
+msgid "ID du template et nom requis"
+msgstr ""
+
+#: Generated automatically
+msgid "Template introuvable"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la sauvegarde: "
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres sauvegardés avec succès"
+msgstr ""
+
+#: Generated automatically
+msgid "Action de maintenance inconnue."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de l\'exécution de l\'action de maintenance."
+msgstr ""
+
+#: Generated automatically
+msgid "Cache vidé avec succès. %d fichiers supprimés, %s libérés."
+msgstr ""
+
+#: Generated automatically
+msgid "Fichiers temporaires nettoyés. %d fichiers supprimés, %s libérés."
+msgstr ""
+
+#: Generated automatically
+msgid "Templates réparés. %d templates corrompus supprimés."
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres réinitialisés avec succès. %d options supprimées."
+msgstr ""
+
+#: Generated automatically
+msgid "Facture"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis"
+msgstr ""
+
+#: Generated automatically
+msgid "Commande"
+msgstr ""
+
+#: Generated automatically
+msgid "Contrat"
+msgstr ""
+
+#: Generated automatically
+msgid "Bon de livraison"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug activé"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug désactivé"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug principal activé"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug principal désactivé"
+msgstr ""
+
+#: Generated automatically
+msgid "Email de test envoyé avec succès"
+msgstr ""
+
+#: Generated automatically
+msgid "Échec de l\'envoi de l\'email de test"
+msgstr ""
+
+#: Generated automatically
+
+#: Generated automatically
+msgid "Erreur lors du test : "
+msgstr ""
+
+#: Generated automatically
+msgid "SMTP n\'est pas activé"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres SMTP incomplets"
+msgstr ""
+
+#: Generated automatically
+msgid "Serveur SMTP ne répond pas correctement. Réponse: "
+msgstr ""
+
+#: Generated automatically
+msgid "Commande EHLO rejetée par le serveur SMTP"
+msgstr ""
+
+#: Generated automatically
+msgid "Le serveur SMTP ne supporte pas STARTTLS, vérifiez le port / chiffrement."
+msgstr ""
+
+#: Generated automatically
+msgid "Échec de la négociation STARTTLS. Réponse: "
+msgstr ""
+
+#: Generated automatically
+msgid "Échec de l\'activation du chiffrement TLS (STARTTLS). Vérifiez la configuration OpenSSL/port."
+msgstr ""
+
+#: Generated automatically
+msgid "Authentification SMTP non supportée par le serveur. Réponse: "
+msgstr ""
+
+#: Generated automatically
+msgid "Nom d\'utilisateur SMTP invalide. Réponse: "
+msgstr ""
+
+#: Generated automatically
+msgid "Mot de passe SMTP invalide. Réponse: "
+msgstr ""
+
+#: Generated automatically
+msgid "Connexion et authentification SMTP réussies"
+msgstr ""
+
+#: Generated automatically
+msgid "Impossible de se connecter au serveur SMTP : "
+msgstr ""
+
+#: Generated automatically
+msgid "Chargement de l\'éditeur React..."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors du chargement"
+msgstr ""
+
+#: Generated automatically
+msgid "Base de données optimisée avec succès."
+msgstr ""
+
+#: Generated automatically
+msgid "Intégrité vérifiée - OK."
+msgstr ""
+
+#: Generated automatically
+msgid "Problèmes détectés."
+msgstr ""
+
+#: Generated automatically
+msgid "Templates PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Template PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nouveau Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Ajouter un Nouveau Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditer le Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Voir le Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Rechercher Templates\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun template trouvé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun template dans la corbeille\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Ajouter\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Ajouter un template PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Modifier le template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nouveau template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Voir le template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Rechercher des templates\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro - Gestionnaire de PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Accueil - PDF Builder Pro\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "🏠 Accueil\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditeur PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "🎨 Éditeur PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Templates PDF - PDF Builder Pro\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "📋 Templates\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres - PDF Builder Pro\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "⚙️ Paramètres\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions nécessaires pour accéder à cette page.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Chargement...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Succès\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Êtes-vous sûr de vouloir supprimer ce template ?\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Dupliquer ce template ?\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nonce invalide.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Permissions insuffisantes.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Base de données vérifiée avec succès.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Tables de base de données créées/réparées avec succès.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Fonction de création des tables non trouvée.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Fichier repair-database.sql introuvable.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Impossible de lire le fichier SQL.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Script SQL exécuté avec succès ! %d instructions réussies.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Script SQL partiellement exécuté. %d réussites, %d erreurs.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Cache vidé avec succès.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nonce invalide\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "ID du template et nom requis\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Template introuvable\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la sauvegarde: \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres sauvegardés avec succès\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Action de maintenance inconnue.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de l\'exécution de l\'action de maintenance.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Cache vidé avec succès. %d fichiers supprimés, %s libérés.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Fichiers temporaires nettoyés. %d fichiers supprimés, %s libérés.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Templates réparés. %d templates corrompus supprimés.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres réinitialisés avec succès. %d options supprimées.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Facture\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Commande\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Contrat\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Bon de livraison\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug activé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug désactivé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug principal activé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Mode debug principal désactivé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Email de test envoyé avec succès\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Échec de l\'envoi de l\'email de test\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Notification manager not available', 'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors du test : \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "SMTP n\'est pas activé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres SMTP incomplets\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Serveur SMTP ne répond pas correctement. Réponse: \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Commande EHLO rejetée par le serveur SMTP\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Le serveur SMTP ne supporte pas STARTTLS, vérifiez le port / chiffrement.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Échec de la négociation STARTTLS. Réponse: \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Échec de l\'activation du chiffrement TLS (STARTTLS). Vérifiez la configuration OpenSSL/port.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Authentification SMTP non supportée par le serveur. Réponse: \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nom d\'utilisateur SMTP invalide. Réponse: \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Mot de passe SMTP invalide. Réponse: \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Connexion et authentification SMTP réussies\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Impossible de se connecter au serveur SMTP : \', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Chargement de l\'éditeur React...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors du chargement\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Base de données optimisée avec succès.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Intégrité vérifiée - OK.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Problèmes détectés.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Initialisation de l\'éditeur React..."
+msgstr ""
+
+#: Generated automatically
+msgid "Initialisation de l\'éditeur React...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "Settings"
+msgstr ""
+
+#: Generated automatically
+msgid "Main Settings"
+msgstr ""
+
+#: Generated automatically
+msgid "Fonctionnalité de téléchargement à implémenter"
+msgstr ""
+
+#: Generated automatically
+msgid "Configure PDF Builder Pro settings."
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres sauvegardés avec succès."
+msgstr ""
+
+#: Generated automatically
+msgid "Editing template #%d"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Settings\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Main Settings\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Fonctionnalité de téléchargement à implémenter\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Configure PDF Builder Pro settings.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paramètres sauvegardés avec succès.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Editing template #%d\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Welcome to PDF Builder Pro - Professional PDF creation made easy."
+msgstr ""
+
+#: Generated automatically
+msgid "Quick Start"
+msgstr ""
+
+#: Generated automatically
+msgid "Create your first PDF template in minutes."
+msgstr ""
+
+#: Generated automatically
+msgid "Create Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Documentation"
+msgstr ""
+
+#: Generated automatically
+msgid "Learn how to use all features."
+msgstr ""
+
+#: Generated automatically
+msgid "View Docs"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Templates"
+msgstr ""
+
+#: Generated automatically
+msgid "Manage your PDF templates."
+msgstr ""
+
+#: Generated automatically
+msgid "Loading PDF Builder..."
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder React Editor"
+msgstr ""
+
+#: Generated automatically
+msgid "Advanced PDF template editor with React interface."
+msgstr ""
+
+#: Generated automatically
+msgid "Loading React Editor..."
+msgstr ""
+
+#: Generated automatically
+msgid "📄 Documents Récents"
+msgstr ""
+
+#: Generated automatically
+msgid "Consultez les logs de génération PDF récents."
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun log récent trouvé. Commencez par créer et générer des PDF avec vos templates."
+msgstr ""
+
+#: Generated automatically
+msgid "Date"
+msgstr ""
+
+#: Generated automatically
+msgid "Message"
+msgstr ""
+
+#: Generated automatically
+msgid "Actions"
+msgstr ""
+
+#: Generated automatically
+msgid "Détails"
+msgstr ""
+
+#: Generated automatically
+msgid "ℹ️ Informations"
+msgstr ""
+
+#: Generated automatically
+msgid "Cette page affiche les logs de génération PDF des 30 derniers jours."
+msgstr ""
+
+#: Generated automatically
+msgid "La fonctionnalité complète de téléchargement sera bientôt disponible."
+msgstr ""
+
+#: Generated automatically
+msgid "Pour consulter vos PDF générés, vérifiez le dossier de téléchargement de votre navigateur."
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Settings"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro requires PHP 7.4 or higher."
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro requires WordPress 5.0 or higher."
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder - React Editor"
+msgstr ""
+
+#: Generated automatically
+msgid "Create a new PDF template"
+msgstr ""
+
+#: Generated automatically
+msgid "Loading PDF Builder React Editor..."
+msgstr ""
+
+#: Generated automatically
+msgid "Welcome to PDF Builder Pro - Professional PDF creation made easy.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Quick Start\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Create your first PDF template in minutes.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Create Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Documentation\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Learn how to use all features.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "View Docs\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Templates\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Manage your PDF templates.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Loading PDF Builder...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder React Editor\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Advanced PDF template editor with React interface.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Loading React Editor...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "📄 Documents Récents\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Consultez les logs de génération PDF récents.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun log récent trouvé. Commencez par créer et générer des PDF avec vos templates.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Date\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Message\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Actions\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Détails\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "ℹ️ Informations\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Cette page affiche les logs de génération PDF des 30 derniers jours.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "La fonctionnalité complète de téléchargement sera bientôt disponible.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Pour consulter vos PDF générés, vérifiez le dossier de téléchargement de votre navigateur.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Settings\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro requires PHP 7.4 or higher.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro requires WordPress 5.0 or higher.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder - React Editor\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Create a new PDF template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Loading PDF Builder React Editor...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: PDF généré avec succès - Commande #%s"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUn PDF a été généré avec succès.nnDétails :n- Commande : #%sn- Template : %sn- Date : %snnCordialement,nL\'équipe PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: Erreur de génération PDF - Commande #%s"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUne erreur s\'est produite lors de la génération d\'un PDF.nnDétails :n- Commande : #%sn- Erreur : %sn- Date : %snnVeuillez vérifier les logs pour plus d\'informations.nnCordialement,nL\'équipe PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: Template supprimé"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUn template a été supprimé.nnDétails :n- Template : %s (ID: %s)n- Supprimé par : %sn- Date : %snnCordialement,nL\'équipe PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: Avertissement de performance"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUn avertissement de performance a été détecté.nnDétails :n- Message : %sn- Date : %snnVeuillez vérifier les paramètres de performance.nnCordialement,nL\'équipe PDF Builder Pro"
+msgstr ""
+
+#: Generated automatically
+msgid "Legacy: Test email (removed)"
+msgstr ""
+
+#: Generated automatically
+msgid "Ceci est une entrée d'email de test héritée qui a été supprimée."
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: PDF généré avec succès - Commande #%s\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUn PDF a été généré avec succès.nnDétails :n- Commande : #%sn- Template : %sn- Date : %snnCordialement,nL\'équipe PDF Builder Pro\", \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: Erreur de génération PDF - Commande #%s\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUne erreur s\'est produite lors de la génération d\'un PDF.nnDétails :n- Commande : #%sn- Erreur : %sn- Date : %snnVeuillez vérifier les logs pour plus d\'informations.nnCordialement,nL\'équipe PDF Builder Pro\", \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: Template supprimé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUn template a été supprimé.nnDétails :n- Template : %s (ID: %s)n- Supprimé par : %sn- Date : %snnCordialement,nL\'équipe PDF Builder Pro\", \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: Avertissement de performance\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnUn avertissement de performance a été détecté.nnDétails :n- Message : %sn- Date : %snnVeuillez vérifier les paramètres de performance.nnCordialement,nL\'équipe PDF Builder Pro\", \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "PDF Builder Pro: Test de notification\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Bonjour,nnCeci est un email de test du système de notifications PDF Builder Pro.nnSi vous recevez cet email, les notifications fonctionnent correctement.nnDétails :n- Date : %sn- Site : %snnCordialement,nL\'équipe PDF Builder Pro\", \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions nécessaires.\'));
+        }
+
+        if (isset($_POST[\'save_settings\']) && wp_verify_nonce($_POST[\'pdf_builder_settings_nonce\'], \'pdf_builder_settings\')) {
+            $this->save_settings();
+            echo \'<div class=\"notice notice-success\"><p>\' . __(\'Paramètres sauvegardés avec succès."
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions nécessaires."
+msgstr ""
+
+#: Generated automatically
+msgid "En attente"
+msgstr ""
+
+#: Generated automatically
+msgid "En cours"
+msgstr ""
+
+#: Generated automatically
+msgid "Terminée"
+msgstr ""
+
+#: Generated automatically
+msgid "Annulée"
+msgstr ""
+
+#: Generated automatically
+msgid "Remboursée"
+msgstr ""
+
+#: Generated automatically
+msgid "Échec"
+msgstr ""
+
+#: Generated automatically
+msgid "Estimation"
+msgstr ""
+
+#: Generated automatically
+msgid "Paiement partiel"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis envoyé"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis accepté"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis rejeté"
+msgstr ""
+
+#: Generated automatically
+msgid "Statut personnalisé"
+msgstr ""
+
+#: Generated automatically
+msgid "En attente d\'expédition"
+msgstr ""
+
+#: Generated automatically
+msgid "Expédié"
+msgstr ""
+
+#: Generated automatically
+msgid "Livré"
+msgstr ""
+
+#: Generated automatically
+msgid "En rupture de stock"
+msgstr ""
+
+#: Generated automatically
+msgid "Pré-commandé"
+msgstr ""
+
+#: Generated automatically
+msgid "Contesté"
+msgstr ""
+
+#: Generated automatically
+msgid "En attente\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "En cours\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Terminée\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Annulée\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Remboursée\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Échec\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Estimation\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Paiement partiel\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis envoyé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis accepté\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Devis rejeté\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Statut personnalisé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "En attente d\'expédition\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Expédié\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Livré\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "En rupture de stock\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Pré-commandé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Contesté\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions nécessaires.\'));
+        }
+
+        global $wpdb;
+        $table_templates = $wpdb->prefix . \'pdf_builder_templates\';
+
+        // Récupérer tous les templates
+        $templates = $wpdb->get_results(\"SELECT * FROM $table_templates ORDER BY updated_at DESC\", ARRAY_A);
+
+        include plugin_dir_path(dirname(__FILE__)) . \'../../templates/admin/templates-page.php\';
+    }
+
+    /**
+     * AJAX - Sauvegarder un template
+     */
+    public function ajaxSaveTemplateV3()
+    {
+        try {
+            // Log pour debug
+            error_log(\'PDF Builder: ajaxSaveTemplateV3 called - REQUEST_METHOD: \' . $_SERVER[\'REQUEST_METHOD\']);
+            // Write to uploads directory for guaranteed access
+            $upload_dir = wp_upload_dir();
+            $log_file = $upload_dir[\'basedir\'] . \'/debug_pdf_save.log\';
+            file_put_contents($log_file, date(\'Y-m-d H:i:s\') . \' SAVE START - REQUEST: \' . print_r($_REQUEST, true) . \"n\", FILE_APPEND);
+            file_put_contents($log_file, date(\'Y-m-d H:i:s\') . \' POST data keys: \' . implode("
+msgstr ""
+
+#: Generated automatically
+msgid "Unknown"
+msgstr ""
+
+#: Generated automatically
+msgid "Customer"
+msgstr ""
+
+#: Generated automatically
+msgid "Unknown\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Customer\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Commande invalide"
+msgstr ""
+
+#: Generated automatically
+msgid "ID commande:"
+msgstr ""
+
+#: Generated automatically
+msgid "Template:"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun template disponible"
+msgstr ""
+
+#: Generated automatically
+msgid "Statut:"
+msgstr ""
+
+#: Generated automatically
+msgid "Type détecté:"
+msgstr ""
+
+#: Generated automatically
+msgid "Source:"
+msgstr ""
+
+#: Generated automatically
+msgid "Générer PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "Commande invalide\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "ID commande:\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Template:\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun template disponible\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Statut:\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Type détecté:\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Source:\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Générer PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Loading...\', PDF_BUILDER_TEXT_DOMAIN),
+            \'error\' => __(\'An error occurred\', PDF_BUILDER_TEXT_DOMAIN),
+            \'success\' => __(\'Success\', PDF_BUILDER_TEXT_DOMAIN),
+            \'cancel\' => __(\'Cancel\', PDF_BUILDER_TEXT_DOMAIN),
+            \'save\' => __(\'Save\', PDF_BUILDER_TEXT_DOMAIN),
+            \'delete\' => __(\'Delete\', PDF_BUILDER_TEXT_DOMAIN),
+            \'edit\' => __(\'Edit\', PDF_BUILDER_TEXT_DOMAIN),
+            \'view\' => __(\'View\', PDF_BUILDER_TEXT_DOMAIN),
+            \'download\' => __(\'Download\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes spécifiques au PDF
+            \'generating_pdf\' => __(\'Generating PDF...\', PDF_BUILDER_TEXT_DOMAIN),
+            \'pdf_generated\' => __(\'PDF generated successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'pdf_generation_failed\' => __(\'PDF generation failed\', PDF_BUILDER_TEXT_DOMAIN),
+            \'download_pdf\' => __(\'Download PDF\', PDF_BUILDER_TEXT_DOMAIN),
+            \'view_pdf\' => __(\'View PDF\', PDF_BUILDER_TEXT_DOMAIN),
+            \'pdf_not_found\' => __(\'PDF not found\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les templates
+            \'template_saved\' => __(\'Template saved successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'template_deleted\' => __(\'Template deleted successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'template_not_found\' => __(\'Template not found\', PDF_BUILDER_TEXT_DOMAIN),
+            \'invalid_template\' => __(\'Invalid template\', PDF_BUILDER_TEXT_DOMAIN),
+            \'template_name_required\' => __(\'Template name is required\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour l\'éditeur
+            \'add_element\' => __(\'Add Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'remove_element\' => __(\'Remove Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'duplicate_element\' => __(\'Duplicate Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'move_element\' => __(\'Move Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'element_properties\' => __(\'Element Properties\', PDF_BUILDER_TEXT_DOMAIN),
+            \'text_element\' => __(\'Text Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'image_element\' => __(\'Image Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'shape_element\' => __(\'Shape Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'barcode_element\' => __(\'Barcode Element\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les propriétés
+            \'font_family\' => __(\'Font Family\', PDF_BUILDER_TEXT_DOMAIN),
+            \'font_size\' => __(\'Font Size\', PDF_BUILDER_TEXT_DOMAIN),
+            \'font_color\' => __(\'Font Color\', PDF_BUILDER_TEXT_DOMAIN),
+            \'font_weight\' => __(\'Font Weight\', PDF_BUILDER_TEXT_DOMAIN),
+            \'text_align\' => __(\'Text Align\', PDF_BUILDER_TEXT_DOMAIN),
+            \'position\' => __(\'Position\', PDF_BUILDER_TEXT_DOMAIN),
+            \'size\' => __(\'Size\', PDF_BUILDER_TEXT_DOMAIN),
+            \'width\' => __(\'Width\', PDF_BUILDER_TEXT_DOMAIN),
+            \'height\' => __(\'Height\', PDF_BUILDER_TEXT_DOMAIN),
+            \'background_color\' => __(\'Background Color\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border\' => __(\'Border\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border_width\' => __(\'Border Width\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border_color\' => __(\'Border Color\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border_style\' => __(\'Border Style\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les erreurs
+            \'permission_denied\' => __(\'Permission denied\', PDF_BUILDER_TEXT_DOMAIN),
+            \'invalid_request\' => __(\'Invalid request\', PDF_BUILDER_TEXT_DOMAIN),
+            \'server_error\' => __(\'Server error\', PDF_BUILDER_TEXT_DOMAIN),
+            \'network_error\' => __(\'Network error\', PDF_BUILDER_TEXT_DOMAIN),
+            \'timeout_error\' => __(\'Request timeout\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les confirmations
+            \'confirm_delete\' => __(\'Are you sure you want to delete this item?\', PDF_BUILDER_TEXT_DOMAIN),
+            \'confirm_save\' => __(\'Do you want to save your changes?\', PDF_BUILDER_TEXT_DOMAIN),
+            \'unsaved_changes\' => __(\'You have unsaved changes. Are you sure you want to leave?\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour l\'administration
+            \'settings_saved\' => __(\'Settings saved successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'settings_reset\' => __(\'Settings reset to defaults\', PDF_BUILDER_TEXT_DOMAIN),
+            \'cache_cleared\' => __(\'Cache cleared successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'logs_cleared\' => __(\'Logs cleared successfully\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les dates
+            \'today\' => __(\'Today\', PDF_BUILDER_TEXT_DOMAIN),
+            \'yesterday\' => __(\'Yesterday\', PDF_BUILDER_TEXT_DOMAIN),
+            \'date_format\' => __(\'Y-m-d H:i:s\', PDF_BUILDER_TEXT_DOMAIN),
+            \'short_date_format\' => __(\'Y-m-d\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les unités
+            \'pixels\' => __(\'pixels\', PDF_BUILDER_TEXT_DOMAIN),
+            \'millimeters\' => __(\'millimeters\', PDF_BUILDER_TEXT_DOMAIN),
+            \'inches\' => __(\'inches\', PDF_BUILDER_TEXT_DOMAIN),
+            \'points\' => __(\'points\', PDF_BUILDER_TEXT_DOMAIN),
+        );
+// Filtrer les chaînes pour permettre la personnalisation
+        $this->strings = apply_filters(\'pdf_builder_i18n_strings\', $this->strings);
+    }
+
+    /**
+     * Localiser les scripts frontend
+     */
+    public function localizeScripts()
+    {
+        if (did_action(\'wp_enqueue_scripts\')) {
+            wp_localize_script(\'pdf-builder-frontend"
+msgstr ""
+
+#: Generated automatically
+msgid "Loading...\', PDF_BUILDER_TEXT_DOMAIN),
+            \'error\' => __(\'An error occurred\', PDF_BUILDER_TEXT_DOMAIN),
+            \'success\' => __(\'Success\', PDF_BUILDER_TEXT_DOMAIN),
+            \'cancel\' => __(\'Cancel\', PDF_BUILDER_TEXT_DOMAIN),
+            \'save\' => __(\'Save\', PDF_BUILDER_TEXT_DOMAIN),
+            \'delete\' => __(\'Delete\', PDF_BUILDER_TEXT_DOMAIN),
+            \'edit\' => __(\'Edit\', PDF_BUILDER_TEXT_DOMAIN),
+            \'view\' => __(\'View\', PDF_BUILDER_TEXT_DOMAIN),
+            \'download\' => __(\'Download\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes spécifiques au PDF
+            \'generating_pdf\' => __(\'Generating PDF...\', PDF_BUILDER_TEXT_DOMAIN),
+            \'pdf_generated\' => __(\'PDF generated successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'pdf_generation_failed\' => __(\'PDF generation failed\', PDF_BUILDER_TEXT_DOMAIN),
+            \'download_pdf\' => __(\'Download PDF\', PDF_BUILDER_TEXT_DOMAIN),
+            \'view_pdf\' => __(\'View PDF\', PDF_BUILDER_TEXT_DOMAIN),
+            \'pdf_not_found\' => __(\'PDF not found\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les templates
+            \'template_saved\' => __(\'Template saved successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'template_deleted\' => __(\'Template deleted successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'template_not_found\' => __(\'Template not found\', PDF_BUILDER_TEXT_DOMAIN),
+            \'invalid_template\' => __(\'Invalid template\', PDF_BUILDER_TEXT_DOMAIN),
+            \'template_name_required\' => __(\'Template name is required\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour l\'éditeur
+            \'add_element\' => __(\'Add Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'remove_element\' => __(\'Remove Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'duplicate_element\' => __(\'Duplicate Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'move_element\' => __(\'Move Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'element_properties\' => __(\'Element Properties\', PDF_BUILDER_TEXT_DOMAIN),
+            \'text_element\' => __(\'Text Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'image_element\' => __(\'Image Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'shape_element\' => __(\'Shape Element\', PDF_BUILDER_TEXT_DOMAIN),
+            \'barcode_element\' => __(\'Barcode Element\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les propriétés
+            \'font_family\' => __(\'Font Family\', PDF_BUILDER_TEXT_DOMAIN),
+            \'font_size\' => __(\'Font Size\', PDF_BUILDER_TEXT_DOMAIN),
+            \'font_color\' => __(\'Font Color\', PDF_BUILDER_TEXT_DOMAIN),
+            \'font_weight\' => __(\'Font Weight\', PDF_BUILDER_TEXT_DOMAIN),
+            \'text_align\' => __(\'Text Align\', PDF_BUILDER_TEXT_DOMAIN),
+            \'position\' => __(\'Position\', PDF_BUILDER_TEXT_DOMAIN),
+            \'size\' => __(\'Size\', PDF_BUILDER_TEXT_DOMAIN),
+            \'width\' => __(\'Width\', PDF_BUILDER_TEXT_DOMAIN),
+            \'height\' => __(\'Height\', PDF_BUILDER_TEXT_DOMAIN),
+            \'background_color\' => __(\'Background Color\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border\' => __(\'Border\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border_width\' => __(\'Border Width\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border_color\' => __(\'Border Color\', PDF_BUILDER_TEXT_DOMAIN),
+            \'border_style\' => __(\'Border Style\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les erreurs
+            \'permission_denied\' => __(\'Permission denied\', PDF_BUILDER_TEXT_DOMAIN),
+            \'invalid_request\' => __(\'Invalid request\', PDF_BUILDER_TEXT_DOMAIN),
+            \'server_error\' => __(\'Server error\', PDF_BUILDER_TEXT_DOMAIN),
+            \'network_error\' => __(\'Network error\', PDF_BUILDER_TEXT_DOMAIN),
+            \'timeout_error\' => __(\'Request timeout\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les confirmations
+            \'confirm_delete\' => __(\'Are you sure you want to delete this item?\', PDF_BUILDER_TEXT_DOMAIN),
+            \'confirm_save\' => __(\'Do you want to save your changes?\', PDF_BUILDER_TEXT_DOMAIN),
+            \'unsaved_changes\' => __(\'You have unsaved changes. Are you sure you want to leave?\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour l\'administration
+            \'settings_saved\' => __(\'Settings saved successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'settings_reset\' => __(\'Settings reset to defaults\', PDF_BUILDER_TEXT_DOMAIN),
+            \'cache_cleared\' => __(\'Cache cleared successfully\', PDF_BUILDER_TEXT_DOMAIN),
+            \'logs_cleared\' => __(\'Logs cleared successfully\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les dates
+            \'today\' => __(\'Today\', PDF_BUILDER_TEXT_DOMAIN),
+            \'yesterday\' => __(\'Yesterday\', PDF_BUILDER_TEXT_DOMAIN),
+            \'date_format\' => __(\'Y-m-d H:i:s\', PDF_BUILDER_TEXT_DOMAIN),
+            \'short_date_format\' => __(\'Y-m-d\', PDF_BUILDER_TEXT_DOMAIN),
+
+            // Chaînes pour les unités
+            \'pixels\' => __(\'pixels\', PDF_BUILDER_TEXT_DOMAIN),
+            \'millimeters\' => __(\'millimeters\', PDF_BUILDER_TEXT_DOMAIN),
+            \'inches\' => __(\'inches\', PDF_BUILDER_TEXT_DOMAIN),
+            \'points\' => __(\'points\', PDF_BUILDER_TEXT_DOMAIN),
+        );
+// Filtrer les chaînes pour permettre la personnalisation
+        $this->strings = apply_filters(\'pdf_builder_i18n_strings\', $this->strings);
+    }
+
+    /**
+     * Localiser les scripts frontend
+     */
+    public function localizeScripts()
+    {
+        if (did_action(\'wp_enqueue_scripts"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas la permission d\'accéder à cette page."
+msgstr ""
+
+#: Generated automatically
+msgid "Accès refusé"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas la permission d\'accéder à cette page.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Accès refusé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions nécessaires pour accéder à cette page.\'));
+    }
+
+    // Récupérer le template_id depuis l\'URL
+    $template_id = isset($_GET[\'template\']) ? sanitize_text_field($_GET[\'template\']) : \'\';
+// Si un template est spécifié, charger son contenu JSON et rediriger vers l\'éditeur React
+    if (!empty($template_id)) {
+// SYSTÈME BUILTIN SUPPRIMÉ - Redirection directe vers l\'éditeur normal
+        $redirect_url = admin_url(\'admin.php?page=pdf-builder-react-editor\');
+        wp_redirect($redirect_url);
+        exit;
+    }
+
+    // Sinon, afficher la liste des templates avec possibilité d\'ouvrir l\'éditeur visuel
+    pdf_builder_builtin_templates_list_page();
+}
+
+/**
+ * Page de liste des templates builtin avec liens vers l\'éditeur visuel
+ */
+function pdf_builder_builtin_templates_list_page()
+{
+
+    // Enqueue les scripts et styles nécessaires
+    wp_enqueue_script(\'pdf-builder-builtin-editor\', plugins_url(\'assets/js/builtin-editor.js\', PDF_BUILDER_PLUGIN_FILE), array(\'jquery\'), \'1.0.0\', true);
+    wp_enqueue_style(\'pdf-builder-builtin-editor\', plugins_url(\'assets/css/builtin-editor.css\', PDF_BUILDER_PLUGIN_FILE), array(), \'1.0.0\');
+// Localiser le script
+    wp_localize_script(\'pdf-builder-builtin-editor"
+msgstr ""
+
+#: Generated automatically
+msgid "Sauvegarder"
+msgstr ""
+
+#: Generated automatically
+msgid "Sauvegarde..."
+msgstr ""
+
+#: Generated automatically
+msgid "Sauvegardé !"
+msgstr ""
+
+#: Generated automatically
+msgid "JSON invalide"
+msgstr ""
+
+#: Generated automatically
+msgid "Template créé avec succès"
+msgstr ""
+
+#: Generated automatically
+msgid "Template supprimé"
+msgstr ""
+
+#: Generated automatically
+msgid "Sauvegarder\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Sauvegarde...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Sauvegardé !\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "JSON invalide\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Template créé avec succès\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Template supprimé\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditeur de Templates Prédéfinis"
+msgstr ""
+
+#: Generated automatically
+msgid "Sélectionnez un template pour l\'éditer visuellement avec l\'éditeur React."
+msgstr ""
+
+#: Generated automatically
+msgid "Créer un Nouveau Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Templates Disponibles"
+msgstr ""
+
+#: Generated automatically
+msgid "Modifier les paramètres"
+msgstr ""
+
+#: Generated automatically
+msgid "Supprimer le template"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditer"
+msgstr ""
+
+#: Generated automatically
+msgid "Nom du template"
+msgstr ""
+
+#: Generated automatically
+msgid "Description"
+msgstr ""
+
+#: Generated automatically
+msgid "Catégorie"
+msgstr ""
+
+#: Generated automatically
+msgid "Général"
+msgstr ""
+
+#: Generated automatically
+msgid "Entreprise"
+msgstr ""
+
+#: Generated automatically
+msgid "Annuler"
+msgstr ""
+
+#: Generated automatically
+msgid "Créer"
+msgstr ""
+
+#: Generated automatically
+msgid "Modifier les Paramètres"
+msgstr ""
+
+#: Generated automatically
+msgid "Mettre à jour"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditeur de Templates Prédéfinis\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Sélectionnez un template pour l\'éditer visuellement avec l\'éditeur React.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Créer un Nouveau Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Templates Disponibles\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Modifier les paramètres\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Supprimer le template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditer\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nom du template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Description\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Catégorie\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Général\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Entreprise\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Annuler\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Créer\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Modifier les Paramètres\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Mettre à jour\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Modèles Prédéfinis"
+msgstr ""
+
+#: Generated automatically
+msgid "Êtes-vous sûr de vouloir supprimer ce modèle ?"
+msgstr ""
+
+#: Generated automatically
+msgid "Modèle sauvegardé avec succès !"
+msgstr ""
+
+#: Generated automatically
+msgid "Modèle supprimé avec succès !"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors du chargement du modèle."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la sauvegarde."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la suppression."
+msgstr ""
+
+#: Generated automatically
+msgid "JSON invalide. Veuillez vérifier la syntaxe."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la génération de l\'aperçu."
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions nécessaires.\'));
+        }
+        // Vérifier l\'authentification développeur
+        $settings = get_option(\'pdf_builder_settings\', []);
+        if (empty($settings[\'developer_enabled\'])) {
+            ?>
+            <div class=\"wrap\">
+                <h1><?php _e(\'🔒 Accès Restreint"
+msgstr ""
+
+#: Generated automatically
+msgid "Modèles Prédéfinis\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Êtes-vous sûr de vouloir supprimer ce modèle ?\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Modèle sauvegardé avec succès !\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Modèle supprimé avec succès !\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors du chargement du modèle.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la sauvegarde.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la suppression.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "JSON invalide. Veuillez vérifier la syntaxe.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur lors de la génération de l\'aperçu.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "🔒 Accès Restreint"
+msgstr ""
+
+#: Generated automatically
+msgid "Le mode développeur n\'est pas activé. Allez dans <strong>PDF Builder → ⚙️ Paramètres → Mode Développeur</strong> pour l\'activer."
+msgstr ""
+
+#: Generated automatically
+msgid "📝 Gestion des Modèles Prédéfinis"
+msgstr ""
+
+#: Generated automatically
+msgid "Déconnexion Développeur"
+msgstr ""
+
+#: Generated automatically
+msgid "🎨 Galerie de Modèles Prédéfinis"
+msgstr ""
+
+#: Generated automatically
+msgid "Nouveau Modèle"
+msgstr ""
+
+#: Generated automatically
+msgid "Actualiser"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun modèle prédéfini trouvé."
+msgstr ""
+
+#: Generated automatically
+msgid "Cliquez sur \"Nouveau Modèle\" pour créer votre premier modèle."
+msgstr ""
+
+#: Generated automatically
+msgid "Supprimer"
+msgstr ""
+
+#: Generated automatically
+msgid "📄 Voir le JSON"
+msgstr ""
+
+#: Generated automatically
+msgid "Régénérer Aperçu"
+msgstr ""
+
+#: Generated automatically
+msgid "Générer Aperçu"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditeur de Modèle"
+msgstr ""
+
+#: Generated automatically
+msgid "Slug du modèle"
+msgstr ""
+
+#: Generated automatically
+msgid "Identifiant unique (lettres minuscules, tirets)"
+msgstr ""
+
+#: Generated automatically
+msgid "Nom du modèle"
+msgstr ""
+
+#: Generated automatically
+msgid "Bon de commande"
+msgstr ""
+
+#: Generated automatically
+msgid "Newsletter"
+msgstr ""
+
+#: Generated automatically
+msgid "Autre"
+msgstr ""
+
+#: Generated automatically
+msgid "Icône (emoji)"
+msgstr ""
+
+#: Generated automatically
+msgid "Configuration JSON"
+msgstr ""
+
+#: Generated automatically
+msgid "Collez ici le JSON exporté depuis l\'éditeur de templates"
+msgstr ""
+
+#: Generated automatically
+msgid "Fermer"
+msgstr ""
+
+#: Generated automatically
+msgid "Valider JSON"
+msgstr ""
+
+#: Generated automatically
+msgid "Aperçu du Modèle"
+msgstr ""
+
+#: Generated automatically
+msgid "🔐 Accès Développeur"
+msgstr ""
+
+#: Generated automatically
+msgid "Cette section est réservée aux développeurs. Entrez le mot de passe développeur pour continuer."
+msgstr ""
+
+#: Generated automatically
+msgid "Mot de passe développeur"
+msgstr ""
+
+#: Generated automatically
+msgid "Entrez le mot de passe..."
+msgstr ""
+
+#: Generated automatically
+msgid "Se connecter"
+msgstr ""
+
+#: Generated automatically
+msgid "Connexion..."
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur de connexion"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur de connexion au serveur"
+msgstr ""
+
+#: Generated automatically
+msgid "🔒 Accès Restreint\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Le mode développeur n\'est pas activé. Allez dans <strong>PDF Builder → ⚙️ Paramètres → Mode Développeur</strong> pour l\'activer.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "📝 Gestion des Modèles Prédéfinis\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Déconnexion Développeur\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "🎨 Galerie de Modèles Prédéfinis\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nouveau Modèle\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Actualiser\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Aucun modèle prédéfini trouvé.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Cliquez sur \"Nouveau Modèle\" pour créer votre premier modèle.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Supprimer\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "📄 Voir le JSON\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Régénérer Aperçu\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Générer Aperçu\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Éditeur de Modèle\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Slug du modèle\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Identifiant unique (lettres minuscules, tirets)\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Nom du modèle\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Bon de commande\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Newsletter\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Autre\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Icône (emoji)\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Configuration JSON\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Collez ici le JSON exporté depuis l\'éditeur de templates\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Fermer\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Valider JSON\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Aperçu du Modèle\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "🔐 Accès Développeur\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Cette section est réservée aux développeurs. Entrez le mot de passe développeur pour continuer.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Mot de passe développeur\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Entrez le mot de passe...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Se connecter\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Connexion...\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur de connexion\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Erreur de connexion au serveur\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions suffisantes pour accéder à cette page."
+msgstr ""
+
+#: Generated automatically
+msgid "Vous n\'avez pas les permissions suffisantes pour accéder à cette page.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "⚙️ PDF Builder Pro Settings"
+msgstr ""
+
+#: Generated automatically
+msgid "⚙️ PDF Builder Pro Settings\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Vous avez créé %d template gratuit sur 1. Passez en Premium pour créer des templates illimités !"
+msgstr ""
+
+#: Generated automatically
+msgid "Template principal introuvable. Veuillez contacter l\'administrateur."
+msgstr ""
+
+#: Generated automatically
+msgid "Vous avez créé %d template gratuit sur 1. Passez en Premium pour créer des templates illimités !\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Template principal introuvable. Veuillez contacter l\'administrateur.\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "[DOC] Gestion des Templates PDF"
+msgstr ""
+
+#: Generated automatically
+msgid "Créer un Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Créer un Template (Premium)"
+msgstr ""
+
+#: Generated automatically
+msgid "Parcourir les Modèles"
+msgstr ""
+
+#: Generated automatically
+msgid "Limite de Templates Atteinte"
+msgstr ""
+
+#: Generated automatically
+msgid "Passer en Premium - 89.99€ à vie"
+msgstr ""
+
+#: Generated automatically
+msgid "Créez Votre Premier Template"
+msgstr ""
+
+#: Generated automatically
+msgid "Commencez par créer votre premier template personnalisé. Passez en Premium pour accéder à des modèles prédéfinis !"
+msgstr ""
+
+#: Generated automatically
+msgid "Créez votre premier template pour commencer à concevoir des PDF personnalisés."
+msgstr ""
+
+#: Generated automatically
+msgid "[DOC] Gestion des Templates PDF\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Créer un Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Créer un Template (Premium)\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Parcourir les Modèles\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Limite de Templates Atteinte\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Passer en Premium - 89.99€ à vie\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Créez Votre Premier Template\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Commencez par créer votre premier template personnalisé. Passez en Premium pour accéder à des modèles prédéfinis !\', \'advanced-pdf-invoice-builder"
+msgstr ""
+
+#: Generated automatically
+msgid "Créez votre premier template pour commencer à concevoir des PDF personnalisés.\', \'advanced-pdf-invoice-builder"
+msgstr ""

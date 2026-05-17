@@ -1,0 +1,394 @@
+# Copyright (C) 2025 PDF Builder Pro
+# This file is distributed under the same license as the PDF Builder Pro package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PDF Builder Pro - WooCommerce Integration\n"
+"Report-Msgid-Bugs-To: https://github.com/your-repo/advanced-pdf-invoice-builder/issues\n"
+"POT-Creation-Date: 2025-01-05 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# WooCommerce Integration - General
+msgid "PDF Builder Pro nécessite WooCommerce pour fonctionner. Veuillez installer et activer WooCommerce."
+msgstr ""
+
+msgid "Actions PDF Builder"
+msgstr ""
+
+msgid "Générer des documents PDF"
+msgstr ""
+
+msgid "Personnaliser avec PDF Builder"
+msgstr ""
+
+# Template Types
+msgid "Facture"
+msgstr ""
+
+msgid "Devis"
+msgstr ""
+
+msgid "Reçu"
+msgstr ""
+
+msgid "Bon de livraison"
+msgstr ""
+
+# Settings Page
+msgid "PDF Builder Pro - Paramètres WooCommerce"
+msgstr ""
+
+msgid "Paramètres généraux"
+msgstr ""
+
+msgid "Configurez l'intégration entre PDF Builder Pro et WooCommerce."
+msgstr ""
+
+msgid "Activer l'intégration WooCommerce"
+msgstr ""
+
+msgid "Génération automatique"
+msgstr ""
+
+msgid "Générer automatiquement les factures"
+msgstr ""
+
+msgid "Statuts de commande déclenchant la génération automatique:"
+msgstr ""
+
+msgid "Pièces jointes aux emails"
+msgstr ""
+
+msgid "Templates par défaut"
+msgstr ""
+
+msgid "Définissez les templates à utiliser pour chaque type de document WooCommerce."
+msgstr ""
+
+msgid "Templates WooCommerce"
+msgstr ""
+
+msgid "Informations entreprise"
+msgstr ""
+
+msgid "Informations de votre entreprise utilisées dans les PDFs."
+msgstr ""
+
+msgid "Informations de l'entreprise"
+msgstr ""
+
+msgid "Nom de l'entreprise"
+msgstr ""
+
+msgid "Adresse"
+msgstr ""
+
+msgid "Téléphone"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Numéro de TVA/SIRET"
+msgstr ""
+
+msgid "URL du logo"
+msgstr ""
+
+msgid "Sélectionner un template..."
+msgstr ""
+
+# JavaScript Messages
+msgid "Génération..."
+msgstr ""
+
+msgid "Télécharger PDF"
+msgstr ""
+
+msgid "Erreur lors de la génération du PDF."
+msgstr ""
+
+msgid "Erreur de communication avec le serveur."
+msgstr ""
+
+msgid "Êtes-vous sûr de vouloir supprimer ce template ?"
+msgstr ""
+
+msgid "Erreur lors de la suppression:"
+msgstr ""
+
+msgid "PDF généré avec succès."
+msgstr ""
+
+msgid "Aucune commande sélectionnée."
+msgstr ""
+
+msgid "Traitement en masse..."
+msgstr ""
+
+msgid "Traitement terminé."
+msgstr ""
+
+msgid "Confirmer l'action en masse"
+msgstr ""
+
+# Email Types
+msgid "Facture client"
+msgstr ""
+
+msgid "Commande terminée"
+msgstr ""
+
+msgid "Commande en cours"
+msgstr ""
+
+msgid "Note client"
+msgstr ""
+
+msgid "Remboursement commande"
+msgstr ""
+
+# Order Data Variables
+msgid "Numéro de commande"
+msgstr ""
+
+msgid "Date de commande"
+msgstr ""
+
+msgid "Total commande"
+msgstr ""
+
+msgid "Sous-total"
+msgstr ""
+
+msgid "TVA"
+msgstr ""
+
+msgid "Frais de port"
+msgstr ""
+
+msgid "Remise"
+msgstr ""
+
+msgid "Méthode de paiement"
+msgstr ""
+
+msgid "Statut de la commande"
+msgstr ""
+
+# Customer Data
+msgid "Prénom (facturation)"
+msgstr ""
+
+msgid "Nom (facturation)"
+msgstr ""
+
+msgid "Entreprise (facturation)"
+msgstr ""
+
+msgid "Adresse 1 (facturation)"
+msgstr ""
+
+msgid "Adresse 2 (facturation)"
+msgstr ""
+
+msgid "Ville (facturation)"
+msgstr ""
+
+msgid "État/Région (facturation)"
+msgstr ""
+
+msgid "Code postal (facturation)"
+msgstr ""
+
+msgid "Pays (facturation)"
+msgstr ""
+
+msgid "Email (facturation)"
+msgstr ""
+
+msgid "Téléphone (facturation)"
+msgstr ""
+
+# Shipping Data
+msgid "Prénom (livraison)"
+msgstr ""
+
+msgid "Nom (livraison)"
+msgstr ""
+
+msgid "Entreprise (livraison)"
+msgstr ""
+
+msgid "Adresse 1 (livraison)"
+msgstr ""
+
+msgid "Adresse 2 (livraison)"
+msgstr ""
+
+msgid "Ville (livraison)"
+msgstr ""
+
+msgid "État/Région (livraison)"
+msgstr ""
+
+msgid "Code postal (livraison)"
+msgstr ""
+
+msgid "Pays (livraison)"
+msgstr ""
+
+# Company Data
+msgid "Nom de l'entreprise"
+msgstr ""
+
+msgid "Adresse de l'entreprise"
+msgstr ""
+
+msgid "Téléphone de l'entreprise"
+msgstr ""
+
+msgid "Email de l'entreprise"
+msgstr ""
+
+msgid "Numéro TVA/SIRET"
+msgstr ""
+
+msgid "URL du logo entreprise"
+msgstr ""
+
+# Order Items
+msgid "Articles de la commande"
+msgstr ""
+
+msgid "Nom de l'article"
+msgstr ""
+
+msgid "Quantité"
+msgstr ""
+
+msgid "Prix"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "SKU"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+# Order Notes
+msgid "Notes de commande"
+msgstr ""
+
+# PDF Generation
+msgid "Génération du PDF en cours..."
+msgstr ""
+
+msgid "PDF généré avec succès"
+msgstr ""
+
+msgid "Erreur lors de la génération du PDF"
+msgstr ""
+
+msgid "Téléchargement du PDF..."
+msgstr ""
+
+# Bulk Actions
+msgid "Générer des factures en masse"
+msgstr ""
+
+msgid "Traitement de %d commandes..."
+msgstr ""
+
+msgid "Progression: %1$d sur %2$d (%3$d%%)"
+msgstr ""
+
+msgid "Traitement en masse terminé avec succès"
+msgstr ""
+
+# Permissions
+msgid "Vous n'avez pas les permissions suffisantes pour accéder à cette page."
+msgstr ""
+
+msgid "Sécurité : Nonce invalide."
+msgstr ""
+
+msgid "Permissions insuffisantes."
+msgstr ""
+
+# File Operations
+msgid "Erreur lors de la création du répertoire PDF"
+msgstr ""
+
+msgid "Erreur lors de la sauvegarde du fichier PDF"
+msgstr ""
+
+msgid "PDF non trouvé"
+msgstr ""
+
+# API Responses
+msgid "Commande non trouvée"
+msgstr ""
+
+msgid "Template non trouvé"
+msgstr ""
+
+msgid "Type de template invalide"
+msgstr ""
+
+msgid "Génération PDF réussie"
+msgstr ""
+
+msgid "Échec de la génération PDF"
+msgstr ""
+
+# Shortcode
+msgid "ID de commande requis"
+msgstr ""
+
+msgid "Commande introuvable"
+msgstr ""
+
+# Metabox
+msgid "Ouvrir dans PDF Builder"
+msgstr ""
+
+msgid "Voir le PDF généré"
+msgstr ""
+
+msgid "Régénérer le PDF"
+msgstr ""
+
+# Admin Notices
+msgid "PDF Builder Pro - WooCommerce activé"
+msgstr ""
+
+msgid "L'intégration WooCommerce a été activée avec succès."
+msgstr ""
+
+msgid "PDF Builder Pro - Configuration requise"
+msgstr ""
+
+msgid "Veuillez configurer les paramètres WooCommerce pour une intégration optimale."
+msgstr ""
+
+# Debug Messages
+msgid "Template chargé:"
+msgstr ""
+
+msgid "Variables injectées:"
+msgstr ""
+
+msgid "PDF généré:"
+msgstr ""
+
+msgid "Erreur PDF:"
+msgstr ""

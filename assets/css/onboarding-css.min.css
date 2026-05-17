@@ -1,0 +1,498 @@
+/**
+ * Styles CSS pour le système d'onboarding de PDF Builder Pro
+ * Design classique avec les couleurs du plugin
+ */
+
+.pdf-builder-onboarding-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pdf-builder-onboarding-modal .modal-content {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 95%;
+    min-height: 600px; /* Hauteur minimale fixe */
+    max-height: 90vh; /* Hauteur maximale */
+    position: relative;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    animation: modalSlideIn 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Contient le contenu */
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pdf-builder-onboarding-modal .modal-header {
+    padding: 24px 40px 20px;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+    border-radius: 8px 8px 0 0;
+}
+
+.pdf-builder-onboarding-modal .modal-header .button-previous {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 16px;
+}
+
+.pdf-builder-onboarding-modal .modal-header .button-previous:hover {
+    background: #f0f0f0;
+    border-color: #ccc;
+}
+
+.pdf-builder-onboarding-modal .modal-close {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.pdf-builder-onboarding-modal .modal-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.pdf-builder-onboarding-modal .modal-body {
+    padding: 32px 40px;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-builder-onboarding-modal .modal-footer {
+    padding: 24px 40px;
+    border-top: 1px solid #e1e1e1;
+    background: #f8f9fa;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pdf-builder-onboarding-modal .modal-footer .button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.pdf-builder-onboarding-modal .modal-footer .button.button-primary {
+    background: #007cba;
+    color: #ffffff;
+    border-color: #007cba;
+}
+
+.pdf-builder-onboarding-modal .modal-footer .button.button-primary:hover:not(:disabled) {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+.pdf-builder-onboarding-modal .modal-footer .button.button-primary:disabled {
+    background: #cccccc;
+    border-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.pdf-builder-onboarding-modal .modal-footer .button.button-secondary {
+    background: #ffffff;
+    color: #666;
+    border-color: #ddd;
+}
+
+.pdf-builder-onboarding-modal .modal-footer .button.button-secondary:hover:not(:disabled) {
+    background: #f0f0f0;
+    border-color: #ccc;
+}
+
+.pdf-builder-onboarding-modal .step-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-builder-onboarding-modal .step-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.pdf-builder-onboarding-modal .step-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #646970;
+    margin: 0 0 24px 0;
+    line-height: 1.4;
+}
+
+.pdf-builder-onboarding-modal .step-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #646970;
+    margin: 0 0 16px 0;
+}
+
+.pdf-builder-onboarding-modal .progress-indicator {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pdf-builder-onboarding-modal .progress-bar {
+    flex: 1;
+    height: 4px;
+    background: #e1e1e1;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pdf-builder-onboarding-modal .progress-fill {
+    height: 100%;
+    background: #007cba;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    position: relative;
+}
+
+.pdf-builder-onboarding-modal .progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: progressShine 2s infinite;
+}
+
+@keyframes progressShine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.pdf-builder-onboarding-modal .progress-text {
+    font-size: 14px;
+    color: #646970;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.pdf-builder-onboarding-modal .progress-steps {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.pdf-builder-onboarding-modal .progress-step {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e1e1e1;
+    transition: all 0.2s ease;
+}
+
+.pdf-builder-onboarding-modal .progress-step.completed {
+    background: #00a32a;
+}
+
+.pdf-builder-onboarding-modal .progress-step.active {
+    background: #007cba;
+    transform: scale(1.2);
+}
+
+/* Styles spécifiques pour les sélections */
+.pdf-builder-onboarding-modal .selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.pdf-builder-onboarding-modal .selection-item {
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #ffffff;
+    text-align: center;
+}
+
+.pdf-builder-onboarding-modal .selection-item:hover {
+    border-color: #007cba;
+    box-shadow: 0 2px 8px rgba(0, 124, 186, 0.1);
+}
+
+.pdf-builder-onboarding-modal .selection-item.selected {
+    border-color: #007cba;
+    background: #f0f8ff;
+    box-shadow: 0 2px 8px rgba(0, 124, 186, 0.2);
+}
+
+.pdf-builder-onboarding-modal .selection-item .selection-icon {
+    font-size: 48px;
+    color: #007cba;
+    margin-bottom: 16px;
+}
+
+.pdf-builder-onboarding-modal .selection-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0 0 8px 0;
+}
+
+.pdf-builder-onboarding-modal .selection-item p {
+    font-size: 14px;
+    color: #646970;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Styles pour les templates */
+.pdf-builder-onboarding-modal .template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.pdf-builder-onboarding-modal .template-item {
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #ffffff;
+}
+
+.pdf-builder-onboarding-modal .template-item:hover {
+    border-color: #007cba;
+    box-shadow: 0 4px 12px rgba(0, 124, 186, 0.15);
+}
+
+.pdf-builder-onboarding-modal .template-item.selected {
+    border-color: #007cba;
+    box-shadow: 0 4px 12px rgba(0, 124, 186, 0.3);
+}
+
+.pdf-builder-onboarding-modal .template-item .template-preview {
+    height: 160px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pdf-builder-onboarding-modal .template-item .template-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pdf-builder-onboarding-modal .template-item .template-info {
+    padding: 20px;
+}
+
+.pdf-builder-onboarding-modal .template-item .template-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0 0 8px 0;
+}
+
+.pdf-builder-onboarding-modal .template-item .template-info p {
+    font-size: 14px;
+    color: #646970;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Styles pour les formulaires */
+.pdf-builder-onboarding-modal .form-group {
+    margin-bottom: 20px;
+}
+
+.pdf-builder-onboarding-modal .form-group label {
+    display: block;
+    font-weight: 500;
+    color: #1d2327;
+    margin-bottom: 8px;
+}
+
+.pdf-builder-onboarding-modal .form-group select,
+.pdf-builder-onboarding-modal .form-group input[type="text"],
+.pdf-builder-onboarding-modal .form-group input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.pdf-builder-onboarding-modal .form-group select:focus,
+.pdf-builder-onboarding-modal .form-group input[type="text"]:focus,
+.pdf-builder-onboarding-modal .form-group input[type="email"]:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.1);
+}
+
+/* Styles pour les boutons radio personnalisés */
+.pdf-builder-onboarding-modal .radio-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.pdf-builder-onboarding-modal .radio-option {
+    flex: 1;
+    position: relative;
+}
+
+.pdf-builder-onboarding-modal .radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.pdf-builder-onboarding-modal .radio-option label {
+    display: block;
+    padding: 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #ffffff;
+    text-align: center;
+}
+
+.pdf-builder-onboarding-modal .radio-option input[type="radio"]:checked + label {
+    border-color: #007cba;
+    background: #f0f8ff;
+    box-shadow: 0 2px 8px rgba(0, 124, 186, 0.2);
+}
+
+.pdf-builder-onboarding-modal .radio-option label:hover {
+    border-color: #007cba;
+    box-shadow: 0 2px 8px rgba(0, 124, 186, 0.1);
+}
+
+.pdf-builder-onboarding-modal .radio-option label .option-icon {
+    font-size: 32px;
+    color: #007cba;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.pdf-builder-onboarding-modal .radio-option label .option-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0 0 8px 0;
+}
+
+.pdf-builder-onboarding-modal .radio-option label .option-description {
+    font-size: 14px;
+    color: #646970;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Prévention du scroll du body */
+body.pdf-builder-onboarding-active {
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pdf-builder-onboarding-modal .modal-content {
+        width: 98%;
+        min-height: 500px;
+        max-height: 95vh;
+    }
+
+    .pdf-builder-onboarding-modal .modal-header,
+    .pdf-builder-onboarding-modal .modal-body,
+    .pdf-builder-onboarding-modal .modal-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pdf-builder-onboarding-modal .step-content h2 {
+        font-size: 24px;
+    }
+
+    .pdf-builder-onboarding-modal .selection-grid,
+    .pdf-builder-onboarding-modal .template-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pdf-builder-onboarding-modal .radio-group {
+        flex-direction: column;
+    }
+}

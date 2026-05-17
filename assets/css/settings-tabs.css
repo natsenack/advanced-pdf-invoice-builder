@@ -1,0 +1,101 @@
+/**
+ * PDF Builder Pro - Styles ultra-minimalistes pour les onglets de paramètres
+ */
+
+
+/* Styles pour le contenu des onglets */
+.pdfb-tab-content {
+    display: none;
+}
+
+.pdfb-tab-content.active {
+    display: block;
+}
+
+/* Styles pour les sections dans les onglets */
+.pdfb-tab-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.pdfb-tab-section h3 {
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 15px 0;
+    padding-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.pdfb-tab-section h4 {
+    margin: 15px 0 8px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Styles pour les boutons */
+.pdfb-button-primary {
+    background: #0073aa;
+    border: 1px solid #0073aa;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 4px 10px;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.pdfb-button-primary:hover,
+.pdfb-button-primary:focus {
+    background: #005177;
+    border-color: #005177;
+}
+
+.pdfb-button-secondary {
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    color: #555;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    padding: 4px 10px;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.pdfb-button-secondary:hover,
+.pdfb-button-secondary:focus {
+    background: #e9e9e9;
+    border-color: #999;
+}
+
+/* Styles pour les messages */
+.pdfb-notice {
+    background: #fff;
+    border-left: 4px solid #00a0d2;
+    margin: 15px 0;
+    padding: 8px 12px;
+}
+
+.pdfb-notice-success {
+    border-left-color: #46b450;
+}
+
+.pdfb-notice-error {
+    border-left-color: #dc3232;
+}
+
+.pdfb-notice-warning {
+    border-left-color: #ffb900;
+}
+
+.pdfb-notice-info {
+    border-left-color: #00a0d2;
+}
+

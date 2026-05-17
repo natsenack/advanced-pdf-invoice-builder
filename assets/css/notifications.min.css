@@ -1,0 +1,449 @@
+/**
+ * PDF Builder Pro - Notifications CSS
+ * Styles modernes et responsives pour le système de notifications
+ * Version: 1.0.0
+ * Updated: 2025-11-29
+ */
+
+/* Conteneur principal des notifications */
+.pdf-builder-notifications-container {
+    position: fixed;
+    z-index: 999999;
+    pointer-events: none;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Positionnements */
+.pdf-builder-notifications-container[data-position="top-left"] {
+    top: 35px;
+    left: 20px;
+    right: auto;
+    bottom: auto;
+}
+
+.pdf-builder-notifications-container[data-position="top-right"] {
+    top: 35px;
+    right: 20px;
+    left: auto;
+    bottom: auto;
+}
+
+.pdf-builder-notifications-container[data-position="bottom-left"] {
+    bottom: 20px;
+    left: 20px;
+    top: auto;
+    right: auto;
+}
+
+.pdf-builder-notifications-container[data-position="bottom-right"] {
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    left: auto;
+}
+
+.pdf-builder-notifications-container[data-position="top-center"] {
+    top: 20px;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateX(-50%);
+}
+
+.pdf-builder-notifications-container[data-position="bottom-center"] {
+    bottom: 20px;
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+}
+
+/* Notification individuelle */
+.pdf-builder-notification {
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid;
+    pointer-events: auto;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    min-height: 50px;
+}
+
+.pdf-builder-notification.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pdf-builder-notification.dismissible:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations d'entrée/sortie */
+.pdf-builder-notification-slide {
+    animation: slideIn 0.3s ease-out;
+}
+
+.pdf-builder-notification-slide.dismissing {
+    animation: slideOut 0.3s ease-in forwards;
+}
+
+.pdf-builder-notification-fade {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.pdf-builder-notification-fade.dismissing {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+.pdf-builder-notification-bounce {
+    animation: bounceIn 0.5s ease-out;
+}
+
+.pdf-builder-notification-bounce.dismissing {
+    animation: bounceOut 0.3s ease-in forwards;
+}
+
+/* Contenu de la notification */
+.notification-content {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+    position: relative;
+}
+
+.notification-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.notification-message {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Bouton de fermeture */
+.notification-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    color: inherit;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-close:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.notification-close .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Barre de progression */
+.notification-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.notification-progress {
+    height: 100%;
+    width: 100%;
+    transition: width linear;
+}
+
+/* Bouton "Tout fermer" */
+.notifications-dismiss-all {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+    transition: all 0.2s ease;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.notifications-dismiss-all:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #333;
+}
+
+.notifications-dismiss-all .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+}
+
+/* États spéciaux */
+.pdf-builder-notification.dismissing {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+}
+
+/* Types de notifications avec couleurs spécifiques */
+.pdf-builder-notification-success {
+    background-color: #d4edda !important;
+    color: #155724 !important;
+    border-left-color: #28a745 !important;
+}
+
+.pdf-builder-notification-error {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+    border-left-color: #dc3545 !important;
+}
+
+.pdf-builder-notification-warning {
+    background-color: #fff3cd !important;
+    color: #856404 !important;
+    border-left-color: #ffc107 !important;
+}
+
+.pdf-builder-notification-info {
+    background-color: #d1ecf1 !important;
+    color: #0c5460 !important;
+    border-left-color: #17a2b8 !important;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pdf-builder-notifications-container {
+        max-width: calc(100vw - 40px);
+        width: calc(100vw - 40px);
+    }
+
+    .pdf-builder-notifications-container[data-position="top-left"],
+    .pdf-builder-notifications-container[data-position="top-right"],
+    .pdf-builder-notifications-container[data-position="bottom-left"],
+    .pdf-builder-notifications-container[data-position="bottom-right"] {
+        left: 20px !important;
+        right: 20px !important;
+        width: auto !important;
+    }
+
+    .pdf-builder-notifications-container[data-position="top-center"],
+    .pdf-builder-notifications-container[data-position="bottom-center"] {
+        left: 20px !important;
+        right: 20px !important;
+        transform: none !important;
+        width: auto !important;
+    }
+
+    .notification-content {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .notification-icon {
+        font-size: 16px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .notification-message {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .notification-close {
+        padding: 2px;
+    }
+
+    .notification-close .dashicons {
+        font-size: 14px;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-builder-notifications-container {
+        max-width: calc(100vw - 20px);
+        width: calc(100vw - 20px);
+    }
+
+    .pdf-builder-notifications-container[data-position="top-left"],
+    .pdf-builder-notifications-container[data-position="top-right"],
+    .pdf-builder-notifications-container[data-position="bottom-left"],
+    .pdf-builder-notifications-container[data-position="bottom-right"],
+    .pdf-builder-notifications-container[data-position="top-center"],
+    .pdf-builder-notifications-container[data-position="bottom-center"] {
+        left: 10px !important;
+        right: 10px !important;
+    }
+
+    .notification-content {
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    .notification-message {
+        font-size: 12px;
+    }
+
+    .notifications-dismiss-all {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+/* Accessibilité */
+.pdf-builder-notification[aria-live] {
+    position: relative;
+}
+
+.pdf-builder-notification[aria-live] .notification-close {
+    position: relative;
+    z-index: 1;
+}
+
+/* Support pour les navigateurs plus anciens */
+@supports not (backdrop-filter: blur(10px)) {
+    .pdf-builder-notification {
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: none;
+    }
+}
+
+/* Mode sombre support */
+@media (prefers-color-scheme: dark) {
+    .pdf-builder-notification {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .notification-close:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .notifications-dismiss-all {
+        background: rgba(0, 0, 0, 0.8);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: #ccc;
+    }
+
+    .notifications-dismiss-all:hover {
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+    }
+}
+
+/* Animations pour les interactions */
+.pdf-builder-notification:hover .notification-progress {
+    animation-play-state: paused;
+}
+
+/* Focus pour l'accessibilité */
+.notification-close:focus {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+.notifications-dismiss-all:focus {
+    outline: 2px solid #007cba;
+    outline-offset: 2px;
+}

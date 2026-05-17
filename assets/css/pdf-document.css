@@ -1,0 +1,11 @@
+@page { margin: 0; size: auto; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; font-family: Arial, sans-serif; background: white; }
+html { margin: 0; padding: 0; }
+.pdf-canvas { font-family: Arial, sans-serif; overflow: hidden; }
+.pdf-element { box-sizing: border-box; }
+.pdf-text { word-wrap: break-word; white-space: pre-wrap; }
+.pdf-company-info { display: flex; flex-direction: column; justify-content: flex-start; overflow: hidden; }
+.pdf-product-table table { font-size: 12px; }
+.pdf-product-table table th, .pdf-product-table table td { text-align: left; }
+.pdf-customer-info { line-height: 1.6; }
