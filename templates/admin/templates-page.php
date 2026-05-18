@@ -122,9 +122,8 @@ if ( ! function_exists( 'pdfib_parse_canvas_setting' ) ) {
 
 // Vérifier le statut Premium via le plugin PRO.
 $pdfib_license_manager = apply_filters( 'pdfib_license_manager_instance', null );
-$pdfib_is_premium      = is_object( $pdfib_license_manager )
-	&& method_exists( $pdfib_license_manager, 'is_premium' )
-	&& $pdfib_license_manager->is_premium();
+$pdfib_is_premium      = \PDFIB\Admin\PdfBuilderAdmin::is_premium_active();
+$pdfib_purchase_url    = 'https://hub.threeaxe.fr/nos-produits/pdf-builder-pro-2';
 
 // Compter les templates utilisateur.
 $pdfib_table_templates = \pdfib_db()->prefix . 'pdfib_templates';
@@ -299,6 +298,23 @@ wp_print_inline_script_tag( $pdfib_script );
 				<?php do_action( 'pdfib_render_templates_page_header_actions' ); ?>
 			</div>
 		</div>
+
+		<?php if ( ! $pdfib_is_premium ) : ?>
+			<div
+				class="pdfb-templates-upgrade-banner"
+				style="margin: 0 0 24px; padding: 18px 20px; border: 1px solid #d8e1ee; border-radius: 16px; background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);"
+			>
+				<strong style="display:block; font-size: 14px; margin-bottom: 6px; color: #1e293b;">
+					<?php esc_html_e( 'Version PRO séparée', 'advanced-pdf-invoice-builder' ); ?>
+				</strong>
+				<p style="margin: 0 0 12px; color: #475569; line-height: 1.6;">
+					<?php esc_html_e( 'Débloquez les templates prédéfinis, les formats avancés et les options canvas étendues depuis cette page.', 'advanced-pdf-invoice-builder' ); ?>
+				</p>
+				<a href="<?php echo esc_url( $pdfib_purchase_url ); ?>" target="_blank" rel="noopener noreferrer" class="button button-primary">
+					<?php esc_html_e( 'Voir les formules PRO', 'advanced-pdf-invoice-builder' ); ?>
+				</a>
+			</div>
+		<?php endif; ?>
 
 
 
@@ -491,30 +507,13 @@ wp_print_inline_script_tag( $pdfib_script );
 
 					// Badge du type de template en haut à gauche.
 
-					$pdfib_dflt_btn_class = 'default-template-icon'
-						. ' pdfb-default-template-icon';
-					printf(
-						'<button type="button" class="%s" style="opacity: %s;"'
-						. ' onclick="toggleDefaultTemplate(%d, \'%s\', \'%s\')"'
-						. ' title="%s" aria-label="%s">',
-						esc_attr( $pdfib_dflt_btn_class ),
-						esc_attr( $pdfib_is_default ? '1' : '0.5' ),
-						intval( $pdfib_template_id ),
-						esc_js( $pdfib_template_type ),
-						esc_js( $pdfib_template_name ),
-						esc_attr(
-							$pdfib_is_default
-								? 'Template par défaut'
-								: 'Définir comme template par défaut'
-						),
-						esc_attr(
-							$pdfib_is_default
-								? 'Template par défaut'
-								: 'Définir comme template par défaut'
-						)
+					do_action(
+						'pdfib_render_templates_card_default_action',
+						$pdfib_template_id,
+						$pdfib_template_type,
+						$pdfib_template_name,
+						$pdfib_template
 					);
-					echo $pdfib_is_default ? esc_html( '⭐' ) : esc_html( '☆' );
-					echo '</button>';
 					// Badge du type de template en haut à gauche.
 					$pdfib_type_colors = array(
 						'facture'    => '#007cba',
@@ -596,12 +595,12 @@ wp_print_inline_script_tag( $pdfib_script );
 						esc_js( $pdfib_template_name ),
 						esc_attr( 'Paramètres' )
 					);
-					// Bouton duplication.
-					echo '<button class="button button-primary"'
-						. ' disabled'
-						. ' title="'
-						. esc_attr__( 'Duplication non disponible', 'advanced-pdf-invoice-builder' )
-						. '">📋</button>';
+					do_action(
+						'pdfib_render_templates_card_duplicate_action',
+						$pdfib_template_id,
+						$pdfib_template_name,
+						$pdfib_template
+					);
 					printf(
 						'<button class="button button-danger"'
 						. ' onclick="handleDeleteClick(%d, \'%s\')"'

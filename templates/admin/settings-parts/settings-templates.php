@@ -511,7 +511,7 @@ $pdfib_is_pro_active            = function_exists( 'pdfib_is_pro_plugin_active' 
 	&& pdfib_is_pro_plugin_active();
 $pdfib_license_redirect_url     = ( $pdfib_is_pro_active || is_object( $pdfib_license_manager ) )
 	? admin_url( 'admin.php?page=pdf-builder-settings&tab=licence' )
-	: admin_url( 'admin.php?page=pdf-builder-pro' );
+	: admin_url( 'admin.php?page=pdf-builder-upgrade' );
 $pdfib_cards                    = array();
 $pdfib_detected_plugins         = array();
 

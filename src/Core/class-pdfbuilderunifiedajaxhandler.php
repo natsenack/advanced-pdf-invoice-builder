@@ -559,6 +559,9 @@ class PdfBuilderUnifiedAjaxHandler {
 	 * @return array
 	 */
 	private function get_all_saved_canvas_options(): array {
+		$pdfib_is_pro_active = function_exists( 'pdfib_is_pro_plugin_active' )
+			&& pdfib_is_pro_plugin_active();
+
 		return array(
 			'canvas_width'                  => pdfib_get_option( 'pdfib_canvas_width', 794 ),
 			'canvas_height'                 => pdfib_get_option( 'pdfib_canvas_height', 1123 ),
@@ -585,7 +588,7 @@ class PdfBuilderUnifiedAjaxHandler {
 			'canvas_keyboard_shortcuts'     => pdfib_get_option( 'pdfib_canvas_keyboard_shortcuts', '1' ),
 			'canvas_export_quality'         => pdfib_get_option( 'pdfib_canvas_export_quality', 90 ),
 			'canvas_export_format'          => pdfib_get_option( 'pdfib_canvas_export_format', 'png' ),
-			'canvas_export_transparent'     => pdfib_get_option( 'pdfib_canvas_export_transparent', '0' ),
+			'canvas_export_transparent'     => $pdfib_is_pro_active ? pdfib_get_option( 'pdfib_canvas_export_transparent', '0' ) : '0',
 			'canvas_fps_target'             => pdfib_get_option( 'pdfib_canvas_fps_target', 60 ),
 			'canvas_memory_limit_js'        => pdfib_get_option( 'pdfib_canvas_memory_limit_js', 50 ),
 			'canvas_memory_limit_php'       => pdfib_get_option( 'pdfib_canvas_memory_limit_php', 256 ),
@@ -2503,7 +2506,7 @@ class PdfBuilderUnifiedAjaxHandler {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>' . esc_html( $template_name ) . '</title>
-    <style>@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap");' . $this->get_pdf_page_base_styles( $width, $height ) . $this->get_pdf_page_print_styles( $width, $height ) . '
+	<style>' . $this->get_pdf_page_base_styles( $width, $height ) . $this->get_pdf_page_print_styles( $width, $height ) . '
     </style>
 </head>
 <body>
@@ -3824,7 +3827,7 @@ class PdfBuilderUnifiedAjaxHandler {
 		$styles       = $this->extract_position_text_styles( $clean );
 		$lines        = explode( "\n", $text );
 
-		$html  = '<div class="element" style="' . $styles['position'] . ' margin: 0; padding: 0; box-sizing: border-box; overflow: hidden;">';
+		$html  = '<div class="element" style="' . $clean . ' margin: 0; padding: 0; box-sizing: border-box; overflow: hidden;">';
 		$html .= $this->render_mention_separator_html( $element );
 		$html .= $this->render_mention_lines( $lines, $font_size, $lh, $is_puppeteer, $styles['text'] );
 		return $html . '</div>';
@@ -3866,33 +3869,73 @@ class PdfBuilderUnifiedAjaxHandler {
 	 * @return string Texte prêt à l'affichage.
 	 */
 	private function get_mention_text( array $element ): string {
+		// Priorité absolue : utiliser le texte sauvegardé par l'éditeur React.
+		// Cela garantit que le PDF correspond toujours à ce que l'éditeur affiche.
+		$saved_text = $element['text'] ?? '';
+		if ( '' !== trim( $saved_text ) ) {
+			return $saved_text;
+		}
+
+		// Fallback pour les templates legacy sans texte sauvegardé (type 'dynamic' ancien).
 		if ( ( $element['mentionType'] ?? 'custom' ) !== 'dynamic' ) {
-			return $element['text'] ?? 'Conditions générales de vente disponibles sur demande.';
+			return 'Conditions générales de vente disponibles sur demande.';
 		}
 		$sep   = $element['separator'] ?? ' • ';
 		$parts = array();
+
+		// Helper : lit la propriété de l'élément en premier, puis l'option WP.
+		// Ignore les valeurs vides ou placeholder 'Non indiqué'.
+		$resolve = function ( string $el_key, string $wp_option ) use ( $element ): string {
+			$v = trim( (string) ( $element[ $el_key ] ?? '' ) );
+			if ( '' === $v || 'Non indiqué' === $v ) {
+				$v = trim( pdfib_get_option( $wp_option, '' ) );
+			}
+			return ( 'Non indiqué' === $v ) ? '' : $v;
+		};
+
 		if ( $element['showEmail'] ?? true ) {
-			$v = get_option( 'admin_email', '' );
+			$v = $resolve( 'email', 'pdfib_company_email' );
+			if ( '' === $v ) {
+				$v = get_option( 'admin_email', '' );
+			}
 			if ( $v ) {
-				$parts[] = 'Email: ' . $v;
+				$parts[] = $v;
 			}
 		}
 		if ( $element['showPhone'] ?? true ) {
-			$v = pdfib_get_option( 'pdfib_company_phone_manual', '' );
+			$v = $resolve( 'phone', 'pdfib_company_phone_manual' );
 			if ( $v ) {
-				$parts[] = 'Tél: ' . $v;
+				$parts[] = $v;
+			}
+		}
+		if ( ( $element['showAddress'] ?? false ) === true ) {
+			$v = $resolve( 'address', 'pdfib_company_address' );
+			if ( $v ) {
+				$parts[] = $v;
 			}
 		}
 		if ( $element['showSiret'] ?? true ) {
-			$v = pdfib_get_option( 'pdfib_company_siret', '' );
+			$v = $resolve( 'siret', 'pdfib_company_siret' );
 			if ( $v ) {
 				$parts[] = self::LABEL_SIRET . $v;
 			}
 		}
 		if ( $element['showVat'] ?? true ) {
-			$v = pdfib_get_option( 'pdfib_company_vat', '' );
+			$v = $resolve( 'tva', 'pdfib_company_vat' );
 			if ( $v ) {
 				$parts[] = self::LABEL_TVA . $v;
+			}
+		}
+		if ( ( $element['showRcs'] ?? false ) === true ) {
+			$v = $resolve( 'rcs', 'pdfib_company_rcs' );
+			if ( $v ) {
+				$parts[] = 'RCS: ' . $v;
+			}
+		}
+		if ( ( $element['showCapital'] ?? false ) === true ) {
+			$v = $resolve( 'capital', 'pdfib_company_capital' );
+			if ( $v ) {
+				$parts[] = 'Capital: ' . $v;
 			}
 		}
 		return $parts ? implode( $sep, $parts ) : 'Conditions générales de vente disponibles sur demande.';
@@ -3979,6 +4022,15 @@ class PdfBuilderUnifiedAjaxHandler {
 		try {
 			if ( ! $this->validate_get_orders_list_request() ) {
 				return;
+			}
+
+			if ( ! function_exists( 'wc_get_orders' ) ) {
+				wp_send_json_error(
+					array(
+						'message' => __( 'WooCommerce doit être actif pour afficher la liste des commandes.', 'advanced-pdf-invoice-builder' ),
+					),
+					400
+				);
 			}
 
 			// Récupérer les commandes récentes (limitées à 50 pour performance).
@@ -4213,25 +4265,30 @@ class PdfBuilderUnifiedAjaxHandler {
 
 	/**
 	 * Ajoute des polices de secours (fallbacks) pour meilleure compatibilité Puppeteer.
-	 * Utilise Google Fonts comme polices principales (garantit disponibilité sur tous serveurs).
-	 * Exemple: "Courier New" -> "Courier Prime", Courier, monospace.
+	 * Utilise des piles de polices système pour éviter les dépendances réseau.
+	 * Exemple: "Courier New" -> "Courier New", Courier, monospace.
 	 *
 	 * @param string $font_name Nom de la police système à mapper.
 	 * @return string Chaîne font-family avec fallbacks.
 	 */
 	private function add_font_fallbacks( string $font_name ) {
-		// Mapping des polices système vers Google Fonts équivalentes avec fallbacks.
+		// Mapping des polices système vers des fallbacks locaux uniquement.
 		$fallback_map = array(
-			'Courier New'     => '"Courier Prime", Courier, monospace',
-			'Times New Roman' => 'Lora, "Times New Roman", serif',
-			'Arial'           => 'Roboto, Arial, sans-serif',
-			'Helvetica'       => '"Open Sans", Helvetica, sans-serif',
-			'Verdana'         => '"Open Sans", Verdana, sans-serif',
-			'Georgia'         => 'Lora, Georgia, serif',
-			'Comic Sans MS'   => 'cursive',
-			'Trebuchet MS'    => '"Open Sans", sans-serif',
-			'Impact'          => 'sans-serif',
-			'Tahoma'          => 'sans-serif',
+			'Courier New'     => '"Courier New", Courier, monospace',
+			'Courier Prime'   => '"Courier New", Courier, monospace',
+			'Times New Roman' => '"Times New Roman", Times, serif',
+			'Arial'           => 'Arial, Helvetica, sans-serif',
+			'Helvetica'       => 'Helvetica, Arial, sans-serif',
+			'Verdana'         => 'Verdana, Geneva, sans-serif',
+			'Georgia'         => 'Georgia, "Times New Roman", serif',
+			'Comic Sans MS'   => '"Comic Sans MS", cursive, sans-serif',
+			'Trebuchet MS'    => '"Trebuchet MS", Arial, sans-serif',
+			'Impact'          => 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif',
+			'Tahoma'          => 'Tahoma, Geneva, sans-serif',
+			'Roboto'          => 'Arial, Helvetica, sans-serif',
+			'Open Sans'       => 'Arial, Helvetica, sans-serif',
+			'Lora'            => 'Georgia, "Times New Roman", serif',
+			'Merriweather'    => 'Georgia, "Times New Roman", serif',
 		);
 
 		// Utiliser le mapping si disponible.
@@ -4245,10 +4302,12 @@ class PdfBuilderUnifiedAjaxHandler {
 		}
 
 		// Police avec espaces: détecter la famille générique.
-		if ( stripos( $font_name, 'times' ) !== false || stripos( $font_name, 'georgia' ) !== false || stripos( $font_name, 'merriweather' ) !== false ) {
+		if ( stripos( $font_name, 'times' ) !== false || stripos( $font_name, 'georgia' ) !== false || stripos( $font_name, 'merriweather' ) !== false || stripos( $font_name, 'lora' ) !== false ) {
 			$generic = 'serif';
 		} elseif ( stripos( $font_name, 'courier' ) !== false || stripos( $font_name, 'mono' ) !== false ) {
 			$generic = 'monospace';
+		} elseif ( stripos( $font_name, 'comic' ) !== false ) {
+			$generic = 'cursive';
 		} else {
 			$generic = 'sans-serif';
 		}
@@ -5879,9 +5938,97 @@ class PdfBuilderUnifiedAjaxHandler {
 	 * @return string Styles CSS inline.
 	 */
 	private function build_element_styles_impl( array $element ) {
+		$element = $this->apply_mentions_theme_defaults( $element );
+
 		return $this->build_typography_styles( $element )
 			. $this->build_background_border_styles( $element )
 			. $this->build_visual_effects_styles( $element );
+	}
+
+	/**
+	 * Apply mentions theme defaults when a mentions element stores only a theme id.
+	 *
+	 * @param array $element Element data.
+	 * @return array
+	 */
+	private function apply_mentions_theme_defaults( array $element ): array {
+		if ( ( $element['type'] ?? '' ) !== 'mentions' ) {
+			return $element;
+		}
+
+		$theme = (string) ( $element['theme'] ?? '' );
+		if ( '' === $theme ) {
+			return $element;
+		}
+
+		$defaults = $this->get_mentions_theme_defaults( $theme );
+		if ( empty( $defaults ) ) {
+			return $element;
+		}
+
+		foreach ( $defaults as $key => $value ) {
+			if ( ! array_key_exists( $key, $element ) || '' === $element[ $key ] || null === $element[ $key ] ) {
+				$element[ $key ] = $value;
+			}
+		}
+
+		return $element;
+	}
+
+	/**
+	 * Get default styles for mentions themes.
+	 *
+	 * @param string $theme Theme identifier.
+	 * @return array<string,mixed>
+	 */
+	private function get_mentions_theme_defaults( string $theme ): array {
+		switch ( $theme ) {
+			case 'subtle':
+				return array(
+					'backgroundColor' => '#f9fafb',
+					'borderColor'     => '#e5e7eb',
+					'borderWidth'     => 1,
+					'borderStyle'     => 'solid',
+					'borderRadius'    => 4,
+					'textColor'       => '#6b7280',
+					'separatorColor'  => '#cbd5e1',
+					'showBackground'  => true,
+				);
+			case 'highlighted':
+				return array(
+					'backgroundColor' => '#eff6ff',
+					'borderColor'     => '#bfdbfe',
+					'borderWidth'     => 1,
+					'borderStyle'     => 'solid',
+					'borderRadius'    => 4,
+					'textColor'       => '#1d4ed8',
+					'separatorColor'  => '#60a5fa',
+					'showBackground'  => true,
+				);
+			case 'elegant':
+				return array(
+					'backgroundColor' => '#ffffff',
+					'borderColor'     => '#ddd6fe',
+					'borderWidth'     => 1,
+					'borderStyle'     => 'solid',
+					'borderRadius'    => 4,
+					'textColor'       => '#6d28d9',
+					'separatorColor'  => '#8b5cf6',
+					'showBackground'  => true,
+				);
+			case 'clean':
+			default:
+				return array(
+					'backgroundColor' => '#ffffff',
+					'borderColor'     => '#e5e7eb',
+					'borderWidth'     => 1,
+					'borderStyle'     => 'solid',
+					'borderRadius'    => 4,
+					'textColor'       => '#374151',
+					'separatorColor'  => '#e5e7eb',
+					'showBackground'  => true,
+				);
+		}
 	}
 
 	/**

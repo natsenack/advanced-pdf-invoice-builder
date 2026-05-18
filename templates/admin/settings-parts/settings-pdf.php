@@ -13,8 +13,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $pdfib_settings = pdfib_get_option( 'pdfib_settings', array() );
 // Recuperer les parametres du Canvas.
-$pdfib_canvas_format      = $pdfib_settings['pdfib_canvas_format'] ?? 'A4';
-$pdfib_canvas_orientation = $pdfib_settings['pdfib_canvas_default_orientation'] ?? 'portrait';
+$pdfib_canvas_format        = $pdfib_settings['pdfib_canvas_format'] ?? 'A4';
+$pdfib_canvas_orientation   = $pdfib_settings['pdfib_canvas_default_orientation'] ?? 'portrait';
+$pdfib_canvas_image_quality = 85;
+
+if ( isset( $pdfib_settings['pdfib_canvas_image_quality'] ) ) {
+	$pdfib_canvas_image_quality = (int) $pdfib_settings['pdfib_canvas_image_quality'];
+} elseif ( isset( $pdfib_settings['pdfib_canvas_export_quality'] ) && is_numeric( $pdfib_settings['pdfib_canvas_export_quality'] ) ) {
+	$pdfib_canvas_image_quality = (int) $pdfib_settings['pdfib_canvas_export_quality'];
+}
+
+$pdfib_canvas_image_quality = max( 30, min( 100, $pdfib_canvas_image_quality ) );
 ?>
 
 <!-- Section Principale : Configuration PDF -->
@@ -87,10 +96,10 @@ $pdfib_canvas_orientation = $pdfib_settings['pdfib_canvas_default_orientation'] 
 					</td>
 				</tr>
 				<tr>
-					<th scope="row"><label for="export_quality">Qualité export (%)</label></th>
+					<th scope="row"><label for="image_quality">Qualité d'image exportée (%)</label></th>
 					<td>
-						<input type="number" id="export_quality" name="pdfib_settings[pdfib_canvas_export_quality]" value="<?php echo esc_attr( $pdfib_settings['pdfib_canvas_export_quality'] ?? '90' ); ?>" min="1" max="100">
-						<p class="description">Qualité de l'image exportée (1-100%)</p>
+						<input type="number" id="image_quality" name="pdfib_settings[pdfib_canvas_image_quality]" value="<?php echo esc_attr( $pdfib_canvas_image_quality ); ?>" min="30" max="100">
+						<p class="description">Qualité JPEG/PNG utilisée pour les exports image (30-100%)</p>
 					</td>
 				</tr>
 				<tr>
@@ -123,17 +132,15 @@ $pdfib_canvas_orientation = $pdfib_settings['pdfib_canvas_default_orientation'] 
 						<p class="description">Format de fichier pour l'export</p>
 					</td>
 				</tr>
-				<tr>
-					<th scope="row"><label for="export_transparent">Fond transparent</label></th>
-					<td>
-						<label class="toggle-switch" aria-label="Fond transparent">
-							<input type="hidden" name="pdfib_settings[pdfib_canvas_export_transparent]" value="0">
-							<input type="checkbox" id="export_transparent" name="pdfib_settings[pdfib_canvas_export_transparent]" value="1" <?php checked( $pdfib_settings['pdfib_canvas_export_transparent'] ?? '0', '1' ); ?>>
-							<span class="toggle-slider"></span>
-						</label>
-						<p class="description">Exporter avec un fond transparent (PNG uniquement)</p>
-					</td>
-				</tr>
+				<?php
+				do_action(
+					'pdfib_pdf_export_transparent_premium_fields',
+					array(
+						'settings'      => $pdfib_settings,
+						'current_value' => $pdfib_settings['pdfib_canvas_export_transparent'] ?? '0',
+					)
+				);
+				?>
 				<tr>
 					<th scope="row"><label for="pdf_compression">Compression</label></th>
 					<td>

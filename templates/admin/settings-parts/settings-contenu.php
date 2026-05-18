@@ -30,8 +30,14 @@ if ( ! function_exists( 'pdfib_get_canvas_option_contenu' ) ) {
 		string $key,
 		string|int $fallback = ''
 	): mixed {
-		$pdfib_option_key = 'pdfib_' . $key;
-		$pdfib_settings   = pdfib_get_option( 'pdfib_settings', array() );
+		$pdfib_option_key    = 'pdfib_' . $key;
+		$pdfib_settings      = pdfib_get_option( 'pdfib_settings', array() );
+		$pdfib_is_pro_active = function_exists( 'pdfib_is_pro_plugin_active' )
+			&& pdfib_is_pro_plugin_active();
+
+		if ( 'canvas_export_transparent' === $key && ! $pdfib_is_pro_active ) {
+			return $fallback;
+		}
 
 		if ( isset( $pdfib_settings[ $pdfib_option_key ] ) ) {
 			return $pdfib_settings[ $pdfib_option_key ];

@@ -206,6 +206,15 @@ class ReactEditorScriptEnqueuer {
 			'version'    => PDFIB_PRO_VERSION,
 			'templateId' => $template_id,
 			'isEdit'     => $template_id > 0,
+			'features'   => array(
+				'imageExport'               => false,
+				'advancedColors'            => false,
+				'unlimitedRate'             => false,
+				'newTemplateButton'         => false,
+				'predefinedTemplatesButton' => false,
+				'gridNavigation'            => false,
+				'editorThemes'              => false,
+			),
 		);
 
 		// Ajouter les informations de licence - FREE edition.
@@ -237,7 +246,8 @@ class ReactEditorScriptEnqueuer {
 			// Définir aussi window.pdfBuilderCanvasSettings pour la compatibilité React.
 			wp_add_inline_script(
 				'pdf-builder-react-main',
-				'window.pdfBuilderCanvasSettings = ' . wp_json_encode( $canvas_settings, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ) . ';'
+				'window.pdfBuilderCanvasSettings = ' . wp_json_encode( $canvas_settings, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ) . ';',
+				'before'
 			);
 		}
 

@@ -193,6 +193,7 @@ function pdfib_get_default_canvas_settings(): array {
 		'pdfib_canvas_zoom_default'        => '100',
 		'pdfib_canvas_zoom_step'           => '25',
 		'pdfib_canvas_export_quality'      => '90',
+		'pdfib_canvas_image_quality'       => '85',
 		'pdfib_canvas_export_format'       => 'png',
 		'pdfib_canvas_export_transparent'  => '0',
 		'pdfib_canvas_drag_enabled'        => '1',

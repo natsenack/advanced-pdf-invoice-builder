@@ -115,11 +115,11 @@ class PdfBuilderNotificationManager {
 		}
 
 		// Charger les styles et scripts seulement si les fichiers existent.
-		$notifications_css = \plugin_dir_path( dirname( __DIR__ ) ) . 'assets/css/notifications.css';
+		$notifications_css = \plugin_dir_path( dirname( __DIR__ ) ) . 'assets/css/notifications-css.min.css';
 		if ( file_exists( $notifications_css ) ) {
 			\wp_enqueue_style(
 				'pdf-builder-notifications',
-				plugin_dir_url( dirname( __DIR__ ) ) . 'assets/css/notifications.css',
+				plugin_dir_url( dirname( __DIR__ ) ) . 'assets/css/notifications-css.min.css',
 				array(),
 				'1.0.0'
 			);

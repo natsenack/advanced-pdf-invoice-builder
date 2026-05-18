@@ -51,7 +51,7 @@ class AdminPageRenderer {
 			'today'     => 0,
 		);
 		$plugin_version = $provider ? $provider->get_plugin_version() : '1.0.0';
-		$is_premium     = false;  // FREE edition always false
+		$is_premium     = \PDFIB\Admin\PdfBuilderAdmin::is_premium_active();
 		// $stats, $plugin_version et $is_premium sont utilisées par le template inclus ci-dessous.
 		include $pdfib_tpl;
 	}

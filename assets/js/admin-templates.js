@@ -328,6 +328,7 @@
 		var modalDpis = (Array.isArray(typeof availableDpis !== 'undefined' ? availableDpis : []) && (typeof availableDpis !== 'undefined' ? availableDpis : []).length > 0)
 			? availableDpis
 			: (canvasSettings.available_dpi || [72, 96, 150, 300, 600]);
+		var isDefaultTemplate = template.is_default === true || template.is_default === 1 || template.is_default === '1';
 
 		modal.innerHTML = '<div class="pdfb-template-modal-content">'
 			+ '<div class="pdfb-template-modal-header"><div><h2>\u2699\uFE0F Param\u00E8tres du Template</h2>'
@@ -358,9 +359,6 @@
 			+ '<option value="newsletter">\uD83D\uDCF0 Newsletter</option>'
 			+ '<option value="autre">\uD83D\uDCC4 Autre</option>'
 			+ '</select></div>'
-			+ '<div class="pdfb-template-settings-field"><label>'
-			+ '<input type="checkbox" id="template-is-default" value="1">'
-			+ ' \u2B50 Template par d\u00E9faut</label></div>'
 			+ '</form>'
 			+ '</div>'
 			+ '<div class="pdfb-template-modal-footer">'
@@ -380,8 +378,7 @@
 		if ( descInput ) { descInput.value = template.description || ''; }
 		var catSelect = document.getElementById( 'template-category' );
 		if ( catSelect ) { catSelect.value = template.category || 'autre'; }
-		var defaultCb = document.getElementById( 'template-is-default' );
-		if ( defaultCb ) { defaultCb.checked = !! template.is_default; }
+		modal.dataset.templateIsDefault = isDefaultTemplate ? '1' : '0';
 		modal.style.display = 'flex';
 		modal.onclick = function(event) {
 			if (event.target === modal) {
@@ -433,10 +430,10 @@
 		var nameEl = document.getElementById('template-name');
 		var descEl = document.getElementById('template-description');
 		var catEl = document.getElementById('template-category');
-		var isDefaultEl = document.getElementById('template-is-default');
 		var formatEl = document.getElementById('template-format');
 		var orientEl = document.getElementById('template-orientation');
 		var dpiEl = document.getElementById('template-dpi');
+		var modal = document.getElementById('template-settings-modal');
 
 		if (!nameEl || !descEl || !catEl || !formatEl || !orientEl || !dpiEl) {
 			if (typeof window.showErrorNotification !== 'undefined') {
@@ -452,7 +449,7 @@
 		formData.append('template_name', nameEl.value);
 		formData.append('template_description', descEl.value);
 		formData.append('template_category', catEl.value);
-		formData.append('is_default', isDefaultEl && isDefaultEl.checked ? '1' : '0');
+		formData.append('is_default', modal && modal.dataset.templateIsDefault === '1' ? '1' : '0');
 		formData.append('canvas_format', formatEl.value);
 		formData.append('canvas_orientation', orientEl.value);
 		formData.append('canvas_dpi', dpiEl.value);

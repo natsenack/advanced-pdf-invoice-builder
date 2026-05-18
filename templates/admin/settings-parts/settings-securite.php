@@ -36,7 +36,7 @@ $pdfib_gdpr_consent_required   = isset(
 $pdfib_gdpr_data_retention     = isset(
 	$pdfib_settings['pdfib_gdpr_data_retention']
 )
-	? (string) $pdfib_settings['pdfib_gdpr_data_retention']
+	? (string) absint( $pdfib_settings['pdfib_gdpr_data_retention'] )
 	: '2555';
 $pdfib_gdpr_audit_enabled      = isset(
 	$pdfib_settings['pdfib_gdpr_audit_enabled']
@@ -329,11 +329,7 @@ $pdfib_gdpr_nonce = wp_create_nonce( 'pdfib_gdpr' );
 						<input type="number"
 							id="gdpr_data_retention"
 							name="pdfib_settings[pdfib_gdpr_data_retention]"
-							value="
-							<?php
-							echo esc_attr( $pdfib_gdpr_data_retention );
-							?>
-							"
+							value="<?php echo esc_attr( $pdfib_gdpr_data_retention ); ?>"
 							min="30"
 							max="3650">
 						<p class="description">

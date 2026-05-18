@@ -155,11 +155,11 @@ class AdminScriptLoader {
 			)
 			: '';
 
-		$admin_css_path = PDFIB_PRO_ASSETS_PATH . 'css/pdf-builder-admin.css';
+		$admin_css_path = PDFIB_PRO_ASSETS_PATH . 'css/pdf-builder-admin-css.min.css';
 
 		wp_enqueue_style(
 			'pdf-builder-admin',
-			PDFIB_PRO_ASSETS_URL . 'css/pdf-builder-admin.css',
+			PDFIB_PRO_ASSETS_URL . 'css/pdf-builder-admin-css.min.css',
 			array(),
 			file_exists( $admin_css_path ) ? (string) filemtime( $admin_css_path ) : PDFIB_PRO_VERSION
 		);
@@ -249,6 +249,17 @@ class AdminScriptLoader {
 				'before'
 			);
 		}
+
+		if ( 'pdf-builder-upgrade' === $current_page ) {
+			$upgrade_css = PDFIB_PRO_ASSETS_PATH . 'css/upgrade-page.css';
+
+			wp_enqueue_style(
+				'pdf-builder-upgrade-page',
+				PDFIB_PRO_ASSETS_URL . 'css/upgrade-page.css',
+				array(),
+				file_exists( $upgrade_css ) ? (string) filemtime( $upgrade_css ) : PDFIB_PRO_VERSION
+			);
+		}
 	}
 
 	/**
@@ -291,13 +302,6 @@ class AdminScriptLoader {
 				true
 			);
 		}
-
-		wp_enqueue_style(
-			'pdf-builder-settings-tabs',
-			PDFIB_PRO_ASSETS_URL . 'css/settings-tabs.css',
-			array(),
-			PDFIB_PRO_VERSION
-		);
 
 		if ( ! wp_script_is( 'pdf-builder-settings-tabs', 'enqueued' ) ) {
 			wp_enqueue_script(

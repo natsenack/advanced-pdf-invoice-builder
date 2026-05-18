@@ -790,6 +790,7 @@ function pdfib_get_canvas_defaults(): array {
 		'pdfib_canvas_selection_mode'      => 'bounding_box',
 		'pdfib_canvas_export_format'       => 'png',
 		'pdfib_canvas_export_quality'      => 90,
+		'pdfib_canvas_image_quality'       => 85,
 		'pdfib_canvas_export_transparent'  => '0',
 		'pdfib_canvas_fps_target'          => 60,
 		'pdfib_canvas_memory_limit_js'     => 128,

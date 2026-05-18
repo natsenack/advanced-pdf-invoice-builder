@@ -32,6 +32,9 @@ class ElementGeneratorFactory {
 			case 'text':
 				return new Generators\TextElementGenerator( $element, $order_data, $company_data );
 
+			case 'mentions':
+				return new Generators\MentionsElementGenerator( $element, $order_data, $company_data );
+
 			case 'company_info':
 				return new Generators\CompanyInfoGenerator( $element, $order_data, $company_data );
 

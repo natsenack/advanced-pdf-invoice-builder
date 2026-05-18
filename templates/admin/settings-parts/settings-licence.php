@@ -92,17 +92,13 @@ $pdfib_stored_license_key = pdfib_get_licence_setting_value(
 	'pdfib_license_key'
 );
 $pdfib_license_manager    = null;
-$pdfib_is_premium         = false;
+$pdfib_is_premium         = \PDFIB\Admin\PdfBuilderAdmin::is_premium_active();
 
 // Permet au PRO d'injecter le LicenseManager si disponible.
 $pdfib_license_manager = apply_filters( 'pdfib_license_manager_instance', $pdfib_license_manager );
 
 if ( ! is_object( $pdfib_license_manager ) && class_exists( '\PDFIB\Managers\PdfBuilderLicenseManager' ) ) {
 	$pdfib_license_manager = \PDFIB\Managers\PdfBuilderLicenseManager::get_instance();
-}
-
-if ( null !== $pdfib_license_manager ) {
-	$pdfib_is_premium = (bool) $pdfib_license_manager->is_premium();
 }
 
 $pdfib_is_active_license = $pdfib_is_premium;
@@ -290,5 +286,98 @@ $pdfib_licence_data                   = apply_filters( 'pdfib_license_tab_data',
 ?>
 <?php wp_print_inline_script_tag( 'window.pdfibLicenceData = ' . wp_json_encode( $pdfib_licence_data, $pdfib_json_flags ) . ';' ); ?>
 <div id="pdfib-licence-root"></div>
+
+<style id="pdfib-licence-page-theme">
+	#pdfib-licence-root {
+		margin-top: 8px;
+	}
+
+	#pdfib-licence-root .pdfb-license-header,
+	#pdfib-licence-root .pdfb-license-action-card,
+	#pdfib-licence-root .premium-features-section,
+	#pdfib-licence-root .pdfb-license-details-section {
+		border: 1px solid #d8e1ee !important;
+		border-radius: 18px !important;
+		box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08) !important;
+		background: #ffffff !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-header {
+		padding: 24px !important;
+		background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%) !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-header .license-main-title,
+	#pdfib-licence-root .pdfb-license-action-card h3,
+	#pdfib-licence-root .pdfb-section-title {
+		color: #0f172a !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-subtitle,
+	#pdfib-licence-root .pdfb-license-action-card p,
+	#pdfib-licence-root .pdfb-license-detail-card p,
+	#pdfib-licence-root .pdfb-license-detail-card span,
+	#pdfib-licence-root .pdfb-license-detail-card code {
+		color: #334155 !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-status-badge.badge-premium {
+		background: #1d4ed8 !important;
+		color: #ffffff !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-status-badge.badge-free {
+		background: #e2e8f0 !important;
+		color: #334155 !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-btn-primary-large,
+	#pdfib-licence-root .pdfb-license-btn-primary {
+		background: linear-gradient(135deg, #1d4ed8, #2563eb) !important;
+		border-color: #1d4ed8 !important;
+		color: #ffffff !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-btn-secondary-large,
+	#pdfib-licence-root .pdfb-license-btn-secondary {
+		background: #ffffff !important;
+		border-color: #cbd5e1 !important;
+		color: #334155 !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-action-card {
+		padding: 22px !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-actions-section > .pdfb-license-action-card:first-child {
+		background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%) !important;
+	}
+
+	#pdfib-licence-root .premium-features-section {
+		padding: 20px !important;
+	}
+
+	#pdfib-licence-root .premium-features-section table thead th {
+		background: #f8fbff !important;
+		color: #0f172a !important;
+	}
+
+	#pdfib-licence-root .premium-features-section table tbody td,
+	#pdfib-licence-root .premium-features-section table tbody th {
+		color: #334155 !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-detail-card {
+		background: #ffffff !important;
+		border: 1px solid rgba(148, 163, 184, 0.25) !important;
+		border-radius: 14px !important;
+	}
+
+	#pdfib-licence-root .pdfb-license-details-grid,
+	#pdfib-licence-root .pdfb-license-action-card-content,
+	#pdfib-licence-root .pdfb-license-quick-actions {
+		gap: 12px !important;
+	}
+</style>
 
 

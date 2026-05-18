@@ -23,7 +23,7 @@ Advanced PDF Invoice Builder lets you create, customise and generate PDF invoice
 * Up to **1 custom template** saved in the database
 * 4 built-in starter templates (invoice, delivery note, quote, receipt)
 * Multilingual & RTL support (`/languages`)
-* High-performance PDF generation engine (Puppeteer-based remote service)
+* High-performance PDF generation engine (Puppeteer-based remote service with local/system font stacks)
 * Intelligent asset caching & backup/restore functionality
 * Comprehensive analytics dashboard
 * Full source code included (TypeScript + PHP, GPL v2)
@@ -99,7 +99,7 @@ The plugin generates standard PDF files compatible with all modern document read
 This plugin connects to the following third-party services. By using this plugin, you agree to their respective terms of service and privacy policies.
 
 = PDF Generation Service (pdf.threeaxe.fr) =
-Used to generate PDF documents from your templates. Your template data and order information may be sent to this service for rendering. This service is provided by Threeaxe and is required for all PDF generation.
+Used to generate PDF documents from your templates. Your template data and order information may be sent to this service for rendering. This service is provided by Threeaxe and is required for all PDF generation. The generated HTML uses local/system font stacks and does not load Google Fonts.
 * Service URL: https://pdf.threeaxe.fr
 * Privacy Policy: https://hub.threeaxe.fr/privacy-policy/
 * Terms of Service: https://hub.threeaxe.fr/conditions-dutilisation
@@ -111,14 +111,6 @@ Used to activate, deactivate, and periodically verify your premium license key. 
 * Service URL: https://hub.threeaxe.fr
 * Privacy Policy: https://hub.threeaxe.fr/privacy-policy/
 * Terms of Service: https://hub.threeaxe.fr/conditions-dutilisation
-
-= Google Fonts (fonts.googleapis.com) =
-Used to load web fonts when generating PDF documents. When a PDF is generated, the HTML template sent to the PDF rendering service includes a Google Fonts stylesheet link to ensure correct typography rendering in the output PDF.
-* Data sent: standard HTTP request (IP address, browser/server user agent) to retrieve font CSS and font files.
-* When: each time a PDF document is generated.
-* Service URL: https://fonts.googleapis.com
-* Privacy Policy: https://policies.google.com/privacy
-* Terms of Service: https://developers.google.com/terms
 
 = WordPress.org API (api.wordpress.org) =
 Used to check for plugin updates through the standard WordPress update mechanism.
@@ -203,7 +195,7 @@ This is entirely optional. You can deactivate the plugin without submitting any 
 
 = 1.3.26 =
 * Fix: PHP Parse error in Puppeteer_Client.php — missing closing braces in render() and render_image() caused fatal errors
-* Fix: NonEnqueuedStylesheet — replaced Google Fonts <link> with CSS @import in generated HTML
+* Fix: NonEnqueuedStylesheet — removed the Google Fonts import in generated HTML and switched to local/system font stacks
 * Fix: DevelopmentFunctions — replaced wp_debug_backtrace_summary() with Exception::getTraceAsString()
 * Fix: DiscouragedFunctions — removed global PHP execution-time adjustments and `set_error_handler()` calls
 * Fix: NonPrefixedHooknameFound — replaced plugin_locale filter with determine_locale()

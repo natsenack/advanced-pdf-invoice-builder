@@ -50,13 +50,13 @@ class PdfBuilderFeatureManager {
 			'free'        => false,
 			'premium'     => true,
 			'name'        => 'Templates avancés',
-			'description' => 'Bibliothèque complète de templates personnalisables',
+			'description' => 'Galerie de templates et modèles supplémentaires',
 		),
 		'premium_elements'        => array(
 			'free'        => false,
 			'premium'     => true,
-			'name'        => 'Éléments premium',
-			'description' => 'Codes-barres, QR codes, graphiques, signatures',
+			'name'        => 'Éléments avancés',
+			'description' => 'Éléments avancés de mise en page et de contenu',
 		),
 		'bulk_generation'         => array(
 			'free'        => false,
@@ -80,7 +80,7 @@ class PdfBuilderFeatureManager {
 			'free'        => false,
 			'premium'     => true,
 			'name'        => 'Export multi-format',
-			'description' => 'PDF, PNG, JPG, SVG',
+			'description' => 'PDF, PNG, JPG',
 		),
 		'priority_support'        => array(
 			'free'        => false,

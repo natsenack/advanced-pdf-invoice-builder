@@ -116,8 +116,14 @@ if ( ! function_exists( 'pdfib_get_canvas_modal_value' ) ) {
 			'pdfib_canvas_settings',
 			array()
 		);
+		$pdfib_is_pro_active   = function_exists( 'pdfib_is_pro_plugin_active' )
+			&& pdfib_is_pro_plugin_active();
 		$pdfib_option_key      = 'pdfib_' . $key;
 		$pdfib_value           = null;
+
+		if ( 'canvas_export_transparent' === $key && ! $pdfib_is_pro_active ) {
+			return $fallback;
+		}
 
 		if ( isset( $pdfib_canvas_settings[ $key ] ) ) {
 			$pdfib_value = $pdfib_canvas_settings[ $key ];
@@ -734,7 +740,7 @@ $pdfib_can_use_custom_colors       = \PDFIB\Managers\PdfBuilderFeatureManager::c
 					<label for="modal_canvas_export_quality">
 						<?php
 						esc_html_e(
-							'Qualite export',
+							'Préréglage d\'export',
 							'advanced-pdf-invoice-builder'
 						);
 						?>
@@ -772,6 +778,7 @@ $pdfib_can_use_custom_colors       = \PDFIB\Managers\PdfBuilderFeatureManager::c
 							?>
 						</option>
 					</select>
+					<p class="description"><?php esc_html_e( 'Définit le rendu utilisé pour l’export du canvas: écran, web ou impression.', 'advanced-pdf-invoice-builder' ); ?></p>
 				</div>
 				<div class="pdfb-setting-group">
 					<label for="modal_canvas_export_format">
@@ -800,27 +807,14 @@ $pdfib_can_use_custom_colors       = \PDFIB\Managers\PdfBuilderFeatureManager::c
 						?>
 					</select>
 				</div>
-				<div class="pdfb-setting-group">
-					<label for="modal_canvas_export_transparent">
-						<?php
-						esc_html_e(
-							'Fond transparent',
-							'advanced-pdf-invoice-builder'
-						);
-						?>
-					</label>
-					<div class="pdfb-toggle-switch">
-						<input type="checkbox"
-							id="modal_canvas_export_transparent"
-							name="pdfib_canvas_export_transparent"
-							value="1" 
-							<?php
-							checked( $pdfib_modal_export_transparent, '1' );
-							?>
-							>
-						<span class="pdfb-ts" aria-hidden="true"></span>
-					</div>
-				</div>
+				<?php
+					do_action(
+						'pdfib_canvas_export_premium_fields',
+						array(
+							'export_transparent' => $pdfib_modal_export_transparent,
+						)
+					);
+					?>
 			</div>
 		</div>
 		<div class="pdfb-canvas-modal-footer">

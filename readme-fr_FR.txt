@@ -75,6 +75,7 @@ Ce plugin se connecte aux services tiers suivants. En utilisant ce plugin, vous 
 
 = Service de génération PDF (pdf.threeaxe.fr) =
 Utilisé pour générer les documents PDF depuis vos modèles. Les données de votre modèle et les informations de commande sont envoyées à ce service pour le rendu. Ce service est fourni par Threeaxe et est nécessaire pour toute génération de PDF.
+Le HTML généré utilise des piles de polices locales/système et ne charge pas Google Fonts.
 * URL du service : https://pdf.threeaxe.fr
 * Politique de confidentialité : https://hub.threeaxe.fr/privacy-policy/
 * Conditions d'utilisation : https://hub.threeaxe.fr/conditions-dutilisation
@@ -86,14 +87,6 @@ Utilisé pour activer et valider votre clé de licence premium. Lorsque vous sai
 * URL du service : https://hub.threeaxe.fr
 * Politique de confidentialité : https://hub.threeaxe.fr/privacy-policy/
 * Conditions d'utilisation : https://hub.threeaxe.fr/conditions-dutilisation
-
-= Google Fonts (fonts.googleapis.com) =
-Utilisé pour charger les polices web lors de la génération des documents PDF. Lorsqu'un PDF est généré, le modèle HTML envoyé au service de rendu Puppeteer inclut un lien vers une feuille de style Google Fonts pour garantir un rendu typographique correct dans le PDF final.
-* Données envoyées : requête HTTP standard (adresse IP, user-agent) pour récupérer le CSS et les fichiers de polices.
-* Quand : à chaque génération d'un document PDF.
-* URL du service : https://fonts.googleapis.com
-* Politique de confidentialité : https://policies.google.com/privacy
-* Conditions d'utilisation : https://developers.google.com/terms
 
 = API WordPress.org (api.wordpress.org) =
 Utilisé pour vérifier les mises à jour du plugin via le mécanisme standard de mises à jour WordPress.
@@ -159,7 +152,7 @@ Cette démarche est entièrement facultative. Vous pouvez désactiver le plugin 
 
 = 1.3.26 =
 * Correctif : PHP Parse error dans Puppeteer_Client.php — accolades fermantes manquantes dans render() et render_image() causant des erreurs fatales
-* Correctif : NonEnqueuedStylesheet — remplacement du tag <link> Google Fonts par un @import CSS dans le HTML généré
+* Correctif : NonEnqueuedStylesheet — suppression de l'import Google Fonts dans le HTML généré et bascule vers des piles de polices locales/système
 * Correctif : DevelopmentFunctions — wp_debug_backtrace_summary() remplacé par Exception::getTraceAsString()
 * Correctif : DiscouragedFunctions — suppression des appels set_time_limit() et set_error_handler()
 * Correctif : NonPrefixedHooknameFound — filtre plugin_locale remplacé par determine_locale()
